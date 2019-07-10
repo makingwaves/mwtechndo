@@ -1,0 +1,32 @@
+﻿@model string
+
+<div style="float: right; margin-top: 5px; height: 48px;">
+    @if (User.Identity.IsAuthenticated)
+    {
+        var username = User.FindFirst("name").Value;
+
+        <div style="position: relative">
+            <div>
+                <span href="#" class="nav-bar-link" style="color: white">
+                    @if (Model != null)
+                    {
+                        <img src="@Model" style="height: 40px; border-radius: 20px; margin-right: 10px"/>
+                    }
+                    else
+                    {
+                        <img src="~/images/blank-profile-picture.svg" style="height: 40px; border-radius: 20px; margin-right: 10px"/>
+                    }
+
+                    <span>@username</span>
+                </span>
+                <a href="/Account/SignOut" class="mdc-list-item__text">Sign out</a>
+            </div>
+        </div>
+    }
+    else
+    {
+        <div style="margin-top: 10px">
+            <a href="/Account/SignIn" class="nav-bar-link">Sign in</a>
+        </div>
+    }
+</div>

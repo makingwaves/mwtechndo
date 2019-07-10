@@ -1,0 +1,36 @@
+﻿@{
+    ViewData["Title"] = "Login";
+}
+
+<div>
+    <h1 class="display-4">Login</h1>
+    <p>Login using your organizational account</p><br />
+    
+    <div>
+        <button onclick="return signIn()">Log in with <b>Azure AD organizational</b> account</button>
+        <button>Log in with standard <b>SSO-enabled organizational</b> account</button>
+    </div>
+    
+    <br />
+    <br />
+
+    <b>NOTES:</b>
+    <ul>
+        <li>We are using here Azure AD multi-tenancy and 2.0 endpoint https://login.microsoftonline.com/common </li>
+        <li>in Dropbox-like scenario we check what is the type of account after user enters the username</li>
+        <hr />
+        <li>organizations should be disabled by default</li>
+        <li>only when registered by admin, organization should be enabled (i.e. volvo.com)</li>
+        <li>when user is logging with volvo.com account you can also redirect user to tenanted 1.0 endpoint so that volvo.com <b>Guest</b> users can log in to your app as well</li>
+        <hr />
+        <li>when organization does not have Azure AD, enable option to set up custom SSO (with higher license :-))</li>
+        <li>for SSO you can support SAML 2.0, OpenIDConnect, WS-Fed (in this order of priority)</li>
+    </ul>
+</div>
+
+<script>
+    function signIn() {
+        window.location.href = '/Account/SignIn';
+        return false;
+    }
+</script>

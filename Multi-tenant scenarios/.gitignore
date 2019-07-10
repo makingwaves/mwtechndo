@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/WebApp.NetCore.MultiTenant/bin/Debug/netcoreapp2.1
+/WebApp.NetCore.MultiTenant/obj
+/WebApp.NetCore.B2C/bin/Debug/netcoreapp2.1
+/WebApp.NetCore.B2C/obj
+/WebApp.NETCore20.OpenIDConnect/bin/Debug
+/WebApp.NETCore20.OpenIDConnect/obj
+/WebApp.NetCore.FinalB2BB2C/bin/Debug/netcoreapp2.1
+/WebApp.NetCore.FinalB2BB2C/obj

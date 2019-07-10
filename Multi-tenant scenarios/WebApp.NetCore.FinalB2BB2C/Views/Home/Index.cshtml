@@ -1,0 +1,58 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@if (!User.Identity.IsAuthenticated)
+{
+    <div style="margin-top: 50px">
+        <label>Username: </label>
+        <input id="i1" type="text" style="width: 427px"/> 
+        <br/>
+
+        <button id="b1" onclick="return signIn()">Log in using Personal Account</button>
+        <button id="b2" onclick="return businessSignIn()">Log in using Organizational Account</button>
+    </div>
+}
+else
+{
+    <div style="margin-top: 50px">
+        <h2>You are logged in!</h2>
+    </div>
+}
+
+
+<script>
+function signIn() {
+    window.location.href = '/Account/PersonalSignIn';
+    return false;
+}
+
+
+function businessSignIn() {
+    window.location.href = '/Account/BusinessSignIn';
+    return false;
+}
+
+    function checkTabPress(e) {
+        var b1 = document.getElementById("b1");
+        var b2 = document.getElementById("b2")
+
+    b1.style.display = 'inline';
+        b2.style.display = 'inline';
+
+    if (e.keyCode === 9 && e.target.nodeName.toLowerCase() === 'button') {
+        var i1 = document.getElementById("i1");;
+
+        if (i1.value.endsWith("makingwaves.com")) {
+            b1.style.display = 'none';
+        } else {
+            b2.style.display = 'none';
+        }
+    }
+}
+
+document.addEventListener('keyup', function (e) {
+    checkTabPress(e);
+}, false);
+
+</script>

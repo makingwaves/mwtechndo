@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.156
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp.NetCore.MultiTenant", "WebApp.NetCore.MultiTenant\WebApp.NetCore.MultiTenant.csproj", "{0E5563CF-1616-4E28-8952-0A3D09BC5AA0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp.NetCore.B2C", "WebApp.NetCore.B2C\WebApp.NetCore.B2C.csproj", "{4B0905AB-BB4C-4DD5-9098-E843D7E77D61}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp.NETCore.MultiTenantPlusMSA", "WebApp.NETCore20.OpenIDConnect\WebApp.NETCore.MultiTenantPlusMSA.csproj", "{BFC8DBD1-300A-4A19-A7A8-4F55229B61FF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp.NetCore.FinalB2BB2C", "WebApp.NetCore.FinalB2BB2C\WebApp.NetCore.FinalB2BB2C.csproj", "{9AB3DD35-5FAB-43D8-895D-237CC68C1E28}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp.NetCore.IdentityServer", "WebApp.NetCore.IdentityServer\WebApp.NetCore.IdentityServer.csproj", "{B3271E5B-EC2A-4158-9E27-13F6F3E7E86C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp.NetCore.IdentityServer.WebClient", "WebApp.NetCore.IdentityServer.WebClient\WebApp.NetCore.IdentityServer.WebClient.csproj", "{A154ECF9-A955-453A-8C4A-06DE8EBA72DC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0E5563CF-1616-4E28-8952-0A3D09BC5AA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E5563CF-1616-4E28-8952-0A3D09BC5AA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E5563CF-1616-4E28-8952-0A3D09BC5AA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E5563CF-1616-4E28-8952-0A3D09BC5AA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B0905AB-BB4C-4DD5-9098-E843D7E77D61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B0905AB-BB4C-4DD5-9098-E843D7E77D61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B0905AB-BB4C-4DD5-9098-E843D7E77D61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B0905AB-BB4C-4DD5-9098-E843D7E77D61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFC8DBD1-300A-4A19-A7A8-4F55229B61FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFC8DBD1-300A-4A19-A7A8-4F55229B61FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFC8DBD1-300A-4A19-A7A8-4F55229B61FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFC8DBD1-300A-4A19-A7A8-4F55229B61FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AB3DD35-5FAB-43D8-895D-237CC68C1E28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AB3DD35-5FAB-43D8-895D-237CC68C1E28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AB3DD35-5FAB-43D8-895D-237CC68C1E28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AB3DD35-5FAB-43D8-895D-237CC68C1E28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3271E5B-EC2A-4158-9E27-13F6F3E7E86C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3271E5B-EC2A-4158-9E27-13F6F3E7E86C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3271E5B-EC2A-4158-9E27-13F6F3E7E86C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3271E5B-EC2A-4158-9E27-13F6F3E7E86C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A154ECF9-A955-453A-8C4A-06DE8EBA72DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A154ECF9-A955-453A-8C4A-06DE8EBA72DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A154ECF9-A955-453A-8C4A-06DE8EBA72DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A154ECF9-A955-453A-8C4A-06DE8EBA72DC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3D5CC6E2-4BF3-4830-8436-507FAE6DCD98}
+	EndGlobalSection
+EndGlobal

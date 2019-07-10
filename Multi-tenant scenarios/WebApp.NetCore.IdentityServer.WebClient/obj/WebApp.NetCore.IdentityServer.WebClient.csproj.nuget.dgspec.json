@@ -1,0 +1,74 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\lukasz.wilisowski\\Documents\\Source\\Repos\\Multi-tenant scenarios\\WebApp.NetCore.IdentityServer.WebClient\\WebApp.NetCore.IdentityServer.WebClient.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\lukasz.wilisowski\\Documents\\Source\\Repos\\Multi-tenant scenarios\\WebApp.NetCore.IdentityServer.WebClient\\WebApp.NetCore.IdentityServer.WebClient.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\lukasz.wilisowski\\Documents\\Source\\Repos\\Multi-tenant scenarios\\WebApp.NetCore.IdentityServer.WebClient\\WebApp.NetCore.IdentityServer.WebClient.csproj",
+        "projectName": "WebApp.NetCore.IdentityServer.WebClient",
+        "projectPath": "C:\\Users\\lukasz.wilisowski\\Documents\\Source\\Repos\\Multi-tenant scenarios\\WebApp.NetCore.IdentityServer.WebClient\\WebApp.NetCore.IdentityServer.WebClient.csproj",
+        "packagesPath": "C:\\Users\\lukasz.wilisowski\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lukasz.wilisowski\\Documents\\Source\\Repos\\Multi-tenant scenarios\\WebApp.NetCore.IdentityServer.WebClient\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\lukasz.wilisowski\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\ServiceFabricSDK.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\Microsoft SDKs\\Service Fabric\\packages": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.episerver.com/feed/packages.svc/": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+C:\Users\lukasz.wilisowski\Documents\Source\Repos\Multi-tenant scenarios\WebApp.NetCore.IdentityServer\bin\Debug\netcoreapp2.1\WebApp.NetCore.IdentityServer.deps.json
+C:\Users\lukasz.wilisowski\Documents\Source\Repos\Multi-tenant scenarios\WebApp.NetCore.IdentityServer\bin\Debug\netcoreapp2.1\WebApp.NetCore.IdentityServer.runtimeconfig.json
+C:\Users\lukasz.wilisowski\Documents\Source\Repos\Multi-tenant scenarios\WebApp.NetCore.IdentityServer\bin\Debug\netcoreapp2.1\WebApp.NetCore.IdentityServer.runtimeconfig.dev.json
+C:\Users\lukasz.wilisowski\Documents\Source\Repos\Multi-tenant scenarios\WebApp.NetCore.IdentityServer\bin\Debug\netcoreapp2.1\WebApp.NetCore.IdentityServer.dll
+C:\Users\lukasz.wilisowski\Documents\Source\Repos\Multi-tenant scenarios\WebApp.NetCore.IdentityServer\obj\Debug\netcoreapp2.1\WebApp.NetCore.IdentityServer.csproj.CoreCompileInputs.cache
+C:\Users\lukasz.wilisowski\Documents\Source\Repos\Multi-tenant scenarios\WebApp.NetCore.IdentityServer\obj\Debug\netcoreapp2.1\WebApp.NetCore.IdentityServer.RazorAssemblyInfo.cache
+C:\Users\lukasz.wilisowski\Documents\Source\Repos\Multi-tenant scenarios\WebApp.NetCore.IdentityServer\obj\Debug\netcoreapp2.1\WebApp.NetCore.IdentityServer.RazorAssemblyInfo.cs
+C:\Users\lukasz.wilisowski\Documents\Source\Repos\Multi-tenant scenarios\WebApp.NetCore.IdentityServer\obj\Debug\netcoreapp2.1\WebApp.NetCore.IdentityServer.AssemblyInfoInputs.cache
+C:\Users\lukasz.wilisowski\Documents\Source\Repos\Multi-tenant scenarios\WebApp.NetCore.IdentityServer\obj\Debug\netcoreapp2.1\WebApp.NetCore.IdentityServer.AssemblyInfo.cs
+C:\Users\lukasz.wilisowski\Documents\Source\Repos\Multi-tenant scenarios\WebApp.NetCore.IdentityServer\obj\Debug\netcoreapp2.1\WebApp.NetCore.IdentityServer.RazorTargetAssemblyInfo.cache
+C:\Users\lukasz.wilisowski\Documents\Source\Repos\Multi-tenant scenarios\WebApp.NetCore.IdentityServer\obj\Debug\netcoreapp2.1\WebApp.NetCore.IdentityServer.csprojAssemblyReference.cache
