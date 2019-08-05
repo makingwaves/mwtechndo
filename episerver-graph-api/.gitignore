@@ -9,7 +9,6 @@
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
-*.mdf
 
 # Build results
 [Dd]ebug/
@@ -176,8 +175,6 @@ UpgradeLog*.XML
 UpgradeLog*.htm
 
 # SQL Server files
-*.mdf
-*.ldf
 
 # Business Intelligence projects
 *.rdl.data
