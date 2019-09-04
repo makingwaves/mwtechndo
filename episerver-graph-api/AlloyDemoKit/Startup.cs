@@ -67,7 +67,6 @@ namespace EpiServer.AlloyDemo.GraphAPI
                         n.ProtocolMessage.RedirectUri = postLogoutRedirectUri;
                         await Task.FromResult(0);
                     },
-                    // If there is a code in the OpenID Connect response, redeem it for an access token and refresh token, and store those away.
                     AuthorizationCodeReceived = async (context) =>
                     {
                         var code = context.Code;
