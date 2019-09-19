@@ -1,0 +1,46 @@
+@using EpiServer.AlloyDemo.GraphAPI
+@using ImageProcessor.Web.Episerver
+@model PageViewModel<WidgetsPage>
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+@{
+    ViewBag.Title = "Graph API";
+}
+
+<div>
+    <div class="row">
+        <div class="span4" style="background-color: lightgray; height: 500px;">
+            Widget panel 1
+            <div id="placeholder1"></div>
+        </div>
+        <div class="span4" style="background-color: lightgoldenrodyellow; height: 500px;">
+            Widget panel 2
+            <div id="placeholder2"></div>
+        </div>
+        <div class="span4" style="background-color: lightcyan; height: 500px;">
+            Widget panel 3
+            <div id="placeholder3"></div>
+        </div>
+    </div>
+</div>
+
+<script>
+    fetch("http://localhost/EpiServer.AlloyDemo.GraphAPI/account/getaccesstoken")
+        .then(response => response.json())
+        .then(accessToken => {
+            return fetch("https://graph.microsoft.com/v1.0/me/", {
+                method: 'GET',
+                mode: 'cors',
+                headers: {
+                    'Authorization': 'Bearer ' + accessToken,
+                    'Content-Type': 'application/json'
+                }
+            });
+        })
+        .then(response => response.json())
+        .then(graphApiJson => {
+            buildItem(graphApiJson);
+        });
+</script>
+<script src="http://localhost/EpiServer.AlloyDemo.GraphAPI/Static/js/widget1.js"></script>

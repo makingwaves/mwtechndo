@@ -24,7 +24,7 @@ namespace EpiServer.AlloyDemo.GraphAPI.Controllers
 
         public async Task<JsonResult> GetAccessToken()
         {
-            var authority = "https://login.windows.net/882c3105-af5d-4b6c-8ab1-d0271766eb79/";
+            var authority = "https://login.microsoftonline.com/makingwaves.onmicrosoft.com";
 
             var resource = "https://graph.microsoft.com/";
             //var clientId = azureOptions.Value.ClientId;
@@ -33,7 +33,7 @@ namespace EpiServer.AlloyDemo.GraphAPI.Controllers
             AuthenticationContext authContext = new AuthenticationContext(authority, TokenCache.DefaultShared);
             AuthenticationResult result = await authContext.AcquireTokenSilentAsync(resource, clientId);
 
-            return Json(result.AccessToken);
+            return Json(result.AccessToken, JsonRequestBehavior.AllowGet);
         }
     }
 }
