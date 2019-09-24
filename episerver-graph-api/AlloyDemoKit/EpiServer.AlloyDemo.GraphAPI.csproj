@@ -580,6 +580,7 @@
     <Compile Include="Business\ContentExtensions.cs" />
     <Compile Include="Business\ContentLocator.cs" />
     <Compile Include="Business\ContentProviders\ClonedContentProvider.cs" />
+    <Compile Include="Business\CustomContentAreaRenderer.cs" />
     <Compile Include="Business\Data\FileDataImporter.cs" />
     <Compile Include="Business\Data\FileReader.cs" />
     <Compile Include="Business\Data\IFileDataImporter.cs" />
@@ -640,6 +641,7 @@
     <Compile Include="Business\UIDescriptors\WeatherBlockUIDescriptor.cs" />
     <Compile Include="Business\UIDescriptors\FindPageUIDescriptor.cs" />
     <Compile Include="Business\UIDescriptors\ContainerPageUIDescriptor.cs" />
+    <Compile Include="Business\ViewTemplateModelRegistrator.cs" />
     <Compile Include="Business\VisitorGroupUIStyling\OutputProcessorActionFilterAttribute.cs" />
     <Compile Include="Business\VisitorGroupUIStyling\OverrideVisitorGroupCss.cs" />
     <Compile Include="Business\VisitorGroupUIStyling\OverrideVisitorGroupStylingInit.cs" />
@@ -676,6 +678,7 @@
     </Compile>
     <Compile Include="Global.cs" />
     <Compile Include="Helpers\CategorizableExtensions.cs" />
+    <Compile Include="Helpers\CustomContentAreaHelpers.cs" />
     <Compile Include="Helpers\GeoPosition.cs" />
     <Compile Include="Helpers\GraphService.cs" />
     <Compile Include="Helpers\HtmlHelpers.cs" />
@@ -683,6 +686,7 @@
     <Compile Include="Helpers\IGraphSdkHelper.cs" />
     <Compile Include="Helpers\SessionTokenCache.cs" />
     <Compile Include="Helpers\UrlHelpers.cs" />
+    <Compile Include="Models\Blocks\BaseO365Block.cs" />
     <Compile Include="Models\Blocks\BlogArchiveBlock.cs" />
     <Compile Include="Models\Blocks\BlogListBlock.cs" />
     <Compile Include="Models\Blocks\ButtonBlock.cs" />
@@ -696,6 +700,16 @@
     <Compile Include="Models\Blocks\HeroBlock.cs" />
     <Compile Include="Models\Blocks\ImageGalleryBlock.cs" />
     <Compile Include="Models\Blocks\LinkedInCompanyBlock.cs" />
+    <Compile Include="Models\Blocks\O365RecentFilesBlock.cs" />
+    <Compile Include="Models\Blocks\O365SharedFilesBlock.cs" />
+    <Compile Include="Models\Blocks\O365PosterBlock.cs" />
+    <Compile Include="Models\Blocks\O365VideoBlock.cs" />
+    <Compile Include="Models\Blocks\O365NotesBlock.cs" />
+    <Compile Include="Models\Blocks\O365AppsBlock.cs" />
+    <Compile Include="Models\Blocks\O365LinksBlock.cs" />
+    <Compile Include="Models\Blocks\O365TasksBlock.cs" />
+    <Compile Include="Models\Blocks\O365EventsBlock.cs" />
+    <Compile Include="Models\Blocks\O365HiBlock.cs" />
     <Compile Include="Models\Blocks\ParkingBlock.cs" />
     <Compile Include="Models\Blocks\EditorialBlock.cs" />
     <Compile Include="Models\Blocks\JumbotronBlock.cs" />
@@ -1168,8 +1182,18 @@
       <SubType>Designer</SubType>
     </None>
     <Content Include="Views\Graph\Index.cshtml" />
-    <Content Include="Views\Graph\_index_old.cshtml" />
     <Content Include="Views\Widgets\Index.cshtml" />
+    <Content Include="Views\Graph\Index - Copy.cshtml" />
+    <Content Include="Views\Shared\Blocks\O365HiBlock.cshtml" />
+    <Content Include="Views\Shared\Blocks\O365EventsBlock.cshtml" />
+    <Content Include="Views\Shared\Blocks\O365TasksBlock.cshtml" />
+    <Content Include="Views\Shared\Blocks\O365RecentFilesBlock.cshtml" />
+    <Content Include="Views\Shared\Blocks\O365SharedFilesBlock.cshtml" />
+    <Content Include="Views\Shared\Blocks\O365LinksBlock.cshtml" />
+    <Content Include="Views\Shared\Blocks\O365AppsBlock.cshtml" />
+    <Content Include="Views\Shared\Blocks\O365PosterBlock.cshtml" />
+    <Content Include="Views\Shared\Blocks\O365VideoBlock.cshtml" />
+    <Content Include="Views\Shared\Blocks\O365NotesBlock.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
       <SubType>Designer</SubType>

@@ -1,0 +1,32 @@
+﻿@model EpiServer.AlloyDemo.GraphAPI.Models.Blocks.O365HiBlock
+
+
+<div class="span4 custom-span" style="background-color: @Model.BackgroundColor">
+    <h1>@Model.Heading</h1>
+    <h1 id="mail-placeholder"></h1>
+    <h2>Let's get things done!</h2>
+</div>
+
+<script>
+    initWidget1("@Model.AccessToken");
+
+    function initWidget1(accessToken) {
+        fetch("https://graph.microsoft.com/v1.0/me/", {
+            method: 'GET',
+            mode: 'cors',
+            headers: {
+                'Authorization': 'Bearer ' + accessToken,
+                'Content-Type': 'application/json'
+            }
+        })
+            .then(response => response.json())
+            .then(graphApiJson => {
+                buildItem(graphApiJson);
+            });
+    };
+
+    function buildItem(graphApiJson) {
+        var spanMail = document.getElementById("mail-placeholder");
+        spanMail.innerHTML = graphApiJson.givenName + "!";
+    }
+</script>

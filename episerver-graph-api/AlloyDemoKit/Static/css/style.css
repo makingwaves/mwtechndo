@@ -704,3 +704,14 @@ i.material-icons {
 #FullRegion_Panel1 {
     display: none;
 }
+
+.custom-span {
+    margin: 0;
+    height: 300px;
+}
+
+@media (min-width: 1200px) {
+    .span8 {
+        width: 740px !important;
+    }
+}

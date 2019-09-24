@@ -15,6 +15,8 @@ namespace EpiServer.AlloyDemo.GraphAPI.Controllers
     {
         public async Task<ActionResult> Index(GraphApiPage currentPage)
         {
+            return View(PageViewModel.Create(currentPage));
+
             ClaimsPrincipal principal = HttpContext.User as ClaimsPrincipal;
             if (principal.Identity.IsAuthenticated)
             {
