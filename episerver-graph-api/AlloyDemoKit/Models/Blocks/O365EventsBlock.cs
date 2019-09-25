@@ -17,12 +17,6 @@ namespace EpiServer.AlloyDemo.GraphAPI.Models.Blocks
     [SiteImageUrl]
     public class O365EventsBlock : BaseO365Block
     {
-        [Display(Order = 1, Name = "Heading", GroupName = SystemTabNames.Content)]
-        [DefaultValue("Test")]
-        public virtual string Heading { get; set; }
 
-        [Display(Order = 2, Name = "Background color", GroupName = SystemTabNames.Settings)]
-        [DefaultValue("bisque")]
-        public virtual string BackgroundColor { get; set; }
     }
 }
