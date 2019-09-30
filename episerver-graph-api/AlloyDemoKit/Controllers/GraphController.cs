@@ -40,5 +40,11 @@ namespace EpiServer.AlloyDemo.GraphAPI.Controllers
 
             return View();
         }
+
+        [ChildActionOnly]
+        public ActionResult GetReactHtmlPage()
+        {
+            return new FilePathResult("~/react/build/index.html", "text/html");
+        }
     }
 }

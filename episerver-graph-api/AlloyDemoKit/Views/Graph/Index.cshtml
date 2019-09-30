@@ -1,16 +1,23 @@
 ﻿@using EpiServer.AlloyDemo.GraphAPI
+@using EPiServer.Core
 @model IPageViewModel<GraphApiPage>
 
 @{
     ViewBag.Title = "Graph API";
-    //Layout = "~/Views/Shared/Layouts/_LeftNavigation.cshtml";
+Layout = null;
 }
 
-<style src="~/static/css/style.css"></style>
-<script src="~/Static/js/graphApiClient.js"></script>
-
-<div class="row" style="margin: 20px 0px">
-    @{
-        Html.RenderNoDivContentAreaRenderer(Model.CurrentPage.MainContentArea);
+<script>
+    window.intranetSettings = {
+        blocks: [
+            @foreach (var block in Model.CurrentPage.MainContentArea.Items)
+            {
+                <text>"@block.GetContent().Name",</text>
+            }
+        ]
     }
-</div>
+</script>
+
+
+@Html.Action("GetReactHtmlPage", "Graph")
+
