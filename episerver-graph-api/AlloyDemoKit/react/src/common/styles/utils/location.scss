@@ -1,0 +1,26 @@
+.positioning__context {
+  position: relative;
+}
+
+.absolute--{
+  &tl {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &tr {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  &br {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  &bl {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}

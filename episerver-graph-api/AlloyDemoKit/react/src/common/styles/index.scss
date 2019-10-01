@@ -1,0 +1,18 @@
+
+// settings
+@import './settings/colors.scss';
+@import './settings/fonts.scss';
+@import './settings/media.scss';
+@import './settings/others.scss';
+
+//tools
+@import './tools/tools.scss';
+
+//generic
+@import './generic/normalize.scss';
+@import './generic/elements.scss';
+
+//utils
+@import './utils/utils.scss';
+@import './utils/location.scss';
+@import './utils/elements.scss';

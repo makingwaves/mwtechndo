@@ -1,0 +1,24 @@
+$spaceamounts: (
+  'sm': $smallGutter,
+  'md': $mediumGutter,
+  'lg': $largeGutter
+);
+$sides: (
+  '': 'all',
+  't': 'top',
+  'b': 'bottom',
+  'l': 'left',
+  'r': 'right',
+);
+
+@each $spacePrefix, $spaceValue in $spaceamounts {
+  @each $sidePrefix, $sideValue in $sides {
+    $property: if($sidePrefix == '', '', -#{$sideValue});
+    .m#{$sidePrefix}-#{$spacePrefix} {
+      margin#{$property}: #{$spaceValue};
+    }
+    .p#{$sidePrefix}-#{$spacePrefix} {
+      padding#{$property}: #{$spaceValue};
+    }
+  } 
+}
