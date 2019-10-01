@@ -10,6 +10,7 @@ using EpiServer.AlloyDemo.GraphAPI;
 using EpiServer.AlloyDemo.GraphAPI.Business;
 using EpiServer.AlloyDemo.GraphAPI.Helpers;
 using EPiServer.Cms.UI.AspNetIdentity;
+using EPiServer.ContentApi.OAuth;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
 using Microsoft.IdentityModel.Protocols.OpenIdConnect;
@@ -105,7 +106,12 @@ namespace EpiServer.AlloyDemo.GraphAPI
             app.AddCmsAspNetIdentity<ApplicationUser>();
 
             // Remove to block registration of administrators
-            app.UseSetupAdminAndUsersPage(() => HttpContext.Current.Request.IsLocal);           
+            app.UseSetupAdminAndUsersPage(() => HttpContext.Current.Request.IsLocal);
+
+            //app.UseContentApiIdentityOAuthAuthorization<ApplicationUserManager<ApplicationUser>, ApplicationUser>(new ContentApiOAuthOptions()
+            //{
+            //    RequireSsl = false
+            //});
         }
 
         private Task OnAuthenticationFailed(AuthenticationFailedNotification<OpenIdConnectMessage, OpenIdConnectAuthenticationOptions> context)
