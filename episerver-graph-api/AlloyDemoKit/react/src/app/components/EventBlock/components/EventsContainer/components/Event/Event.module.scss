@@ -1,0 +1,23 @@
+@import '~common/styles/settings/index.scss';
+
+.eventContainer {
+  font-size: 14px;
+  @media (min-width: $tablet-portrait) {
+    flex-direction: row;
+  }
+}
+
+.item {
+  font-family: 'Aften Screen';
+  @media (min-width: $tablet-portrait) {
+    flex: 1 0 auto;
+    max-width: 32%;
+  }
+}
+
+.toStartBox {
+  padding: 4px 8px;
+  color: $primary-white;
+  background-color: $base-yellow;
+  font-size: 11px;
+}

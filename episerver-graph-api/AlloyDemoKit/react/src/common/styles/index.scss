@@ -1,9 +1,6 @@
-
 // settings
-@import './settings/colors.scss';
+@import './settings/index.scss';
 @import './settings/fonts.scss';
-@import './settings/media.scss';
-@import './settings/others.scss';
 
 //tools
 @import './tools/tools.scss';
@@ -16,3 +13,6 @@
 @import './utils/utils.scss';
 @import './utils/location.scss';
 @import './utils/elements.scss';
+
+//tachions
+@import '~tachyons/css/tachyons.min.css';

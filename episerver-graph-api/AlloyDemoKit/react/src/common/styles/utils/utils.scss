@@ -1,3 +1,7 @@
+.pvt-mini {
+  padding-top: $miniGutter;
+  padding-bottom: $miniGutter;
+}
 
 .pvt-sm {
   padding-top: $smallGutter;
@@ -14,6 +18,11 @@
   padding-bottom: $largeGutter;
 }
 
+.pht-mini {
+  padding-top: $miniGutter;
+  padding-bottom: $miniGutter;
+}
+
 .pht-sm {
   padding-left: $smallGutter;
   padding-right: $smallGutter;
@@ -27,4 +36,56 @@
 .pht-lg {
   padding-left: $largeGutter;
   padding-right: $largeGutter;
+}
+
+.mvt-mini {
+  padding-top: $miniGutter;
+  padding-bottom: $miniGutter;
+}
+
+.mvt-sm {
+  padding-top: $smallGutter;
+  padding-bottom: $smallGutter;
+}
+
+.mvt-md {
+  padding-top: $mediumGutter;
+  padding-bottom: $mediumGutter;
+}
+
+.mvt-lg {
+  padding-top: $largeGutter;
+  padding-bottom: $largeGutter;
+}
+
+.mht-mini {
+  padding-top: $miniGutter;
+  padding-bottom: $miniGutter;
+}
+
+.mht-sm {
+  padding-left: $smallGutter;
+  padding-right: $smallGutter;
+}
+
+.mht-md {
+  padding-left: $mediumGutter;
+  padding-right: $mediumGutter;
+}
+
+.mht-lg {
+  padding-left: $largeGutter;
+  padding-right: $largeGutter;
+}
+
+.hidden-block {
+  position: absolute;
+  left: 0;
+  top: 0;
+  max-width: 0;
+  max-height: 0;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+  overflow: hidden;
 }

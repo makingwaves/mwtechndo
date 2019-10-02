@@ -1,7 +1,9 @@
 $spaceamounts: (
+  'reset': 0,
+  'mini': $miniGutter,
   'sm': $smallGutter,
   'md': $mediumGutter,
-  'lg': $largeGutter
+  'lg': $largeGutter,
 );
 $sides: (
   '': 'all',
@@ -20,5 +22,5 @@ $sides: (
     .p#{$sidePrefix}-#{$spacePrefix} {
       padding#{$property}: #{$spaceValue};
     }
-  } 
+  }
 }

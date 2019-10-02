@@ -15,7 +15,7 @@ const App: FunctionComponent<AppProps> = () => {
         <DynamicComponents key={b} componentKey={b} />
       ))}
     </div>
-  )
-}
+  );
+};
 
 export default App;
