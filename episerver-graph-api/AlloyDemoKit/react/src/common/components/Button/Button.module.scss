@@ -1,0 +1,10 @@
+@import '~common/styles/settings/index.scss';
+
+.button {
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  &:focus {
+    outline: 1px solid $primary-grey;
+  }
+}

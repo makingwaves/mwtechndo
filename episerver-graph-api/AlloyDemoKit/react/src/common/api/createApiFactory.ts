@@ -15,7 +15,7 @@ export const createApiClient = (options: AxiosRequestConfig = {}): AxiosInstance
   api.interceptors.response.use(
     response => response.data,
     (error: AxiosError) => {
-      return error;
+      return Promise.reject(error);
     },
   );
 

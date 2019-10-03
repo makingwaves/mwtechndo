@@ -1,0 +1,12 @@
+@import '~common/styles/settings/index.scss';
+
+.searchContainer {
+  max-width: 0;
+  overflow-x: hidden;
+  border-bottom: 2px solid $third-grey;
+  transition: all 0.1s ease-in;
+}
+
+.shown {
+  max-width: 220px;
+}

@@ -1,14 +1,21 @@
-import isDebug from '../../../utils/isDebug';
+import { isDebug } from 'common/utils';
 
-import { IComponentKey } from './types';
+import { IComponentKey, IHeaderData } from './types';
 
-import { getMockedIntranetBlocks } from '../mocks';
+import { getMockedIntranetBlocks, getMockedHeaderData } from '../mocks';
 
 export * from './types';
 
-export function getIntranetBlocks(): IComponentKey[] {
+export const getIntranetBlocks = (): IComponentKey[] => {
   if (isDebug) {
     return getMockedIntranetBlocks();
   }
   return [];
-}
+};
+
+export const getHeaderData = (): IHeaderData => {
+  if (isDebug) {
+    return getMockedHeaderData();
+  }
+  return {} as IHeaderData;
+};

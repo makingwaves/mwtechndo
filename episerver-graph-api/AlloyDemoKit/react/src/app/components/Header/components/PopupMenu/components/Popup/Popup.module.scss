@@ -1,0 +1,14 @@
+@import '~common/styles/settings/index.scss';
+
+.aside {
+  top: 100%;
+  box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: all 0.1s ease-in;
+}
+
+.shown {
+  transform: scaleY(1);
+}

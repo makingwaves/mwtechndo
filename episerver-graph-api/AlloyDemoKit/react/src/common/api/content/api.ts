@@ -1,9 +1,9 @@
-import { AxiosRequestConfig } from "axios";
+import { AxiosRequestConfig } from 'axios';
 
-import { createApiClient } from "../createApiFactory";
+import { createApiClient } from '../createApiFactory';
 
 const graphOptions: AxiosRequestConfig = {
-  baseURL: process.env.API_URL
-}
+  baseURL: process.env.REACT_APP_API_URL,
+};
 
 export const api = createApiClient(graphOptions);

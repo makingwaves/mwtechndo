@@ -1,0 +1,17 @@
+@import '~common/styles/settings/index.scss';
+
+.header {
+  flex: 1 1 100%;
+  font-family: 'Aften Screen';
+}
+
+.image {
+  width: 60px;
+}
+
+.container {
+  @media (min-width: $tablet-portrait) {
+    flex-direction: row;
+    align-items: center;
+  }
+}

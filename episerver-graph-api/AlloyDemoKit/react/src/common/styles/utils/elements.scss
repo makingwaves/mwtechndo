@@ -1,7 +1,14 @@
 .block {
+  flex: 1 1 100%;
   padding: $mediumGutter;
   margin-top: $mediumGutter;
   background-color: $primary-grey;
+  @media (min-width: $tablet-portrait) {
+    max-width: 49%;
+  }
+  @media (min-width: $laptops) {
+    max-width: 32%;
+  }
 }
 
 .title-block {

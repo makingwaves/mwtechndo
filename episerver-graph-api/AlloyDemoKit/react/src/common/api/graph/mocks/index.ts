@@ -1,4 +1,4 @@
-import { IUser, IEvent, ITask, ISharedFile, DocumentType } from '../endpoints';
+import { IUser, IRecentFile, IEvent, ITask, ISharedFile, DocumentType } from '../endpoints';
 
 export const getMockedUserData = (): IUser => {
   return {
@@ -92,6 +92,35 @@ export const getMockedSharedFiles = (): ISharedFile[] => {
       type: DocumentType.PowerPoint,
       webUrl: 'https://onet.pl',
       sharedBy: 'Magdalena Ruta',
+    },
+  ];
+};
+
+export const getMockedRecentlyOpenedFiles = (): IRecentFile[] => {
+  return [
+    {
+      id: '1',
+      name: 'WHO_Offer.doc',
+      type: DocumentType.Word,
+      webUrl: 'https://onet.pl',
+      updatedBy: 'Kamelia Niemczyk',
+      lastUpdate: '20/04/2019',
+    },
+    {
+      id: '2',
+      name: 'Offer_Valg.pptx',
+      type: DocumentType.PowerPoint,
+      webUrl: 'https://onet.pl',
+      updatedBy: 'Krzysztof Nofz',
+      lastUpdate: '20/05/2019',
+    },
+    {
+      id: '3',
+      name: 'Estimation_WHO.exe',
+      type: DocumentType.Excel,
+      webUrl: 'https://onet.pl',
+      updatedBy: 'Magdalena Ruta',
+      lastUpdate: '01/10/2019',
     },
   ];
 };

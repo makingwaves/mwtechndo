@@ -10,6 +10,8 @@ import {
   ISharedFile,
   DocumentType,
   ISharedFilesResponse,
+  IRecentFile,
+  IRecentFilesResponse,
 } from '../types';
 
 const getNonNullableValue = <T>(value: T, defaultValue: NonNullable<T>): NonNullable<T> => {
@@ -69,5 +71,18 @@ export const normalizeUserSharedFiles = ({ value }: ISharedFilesResponse): IShar
     type: DocumentType.Excel,
     webUrl: getNonNullableValue(v.webUrl, ''),
     sharedBy: v.createdBy ? getNonNullableValue(v.createdBy.user && v.createdBy.user.displayName, '') : '',
+  }));
+};
+
+export const normalizeUserRecentOpenedFiles = ({ value }: IRecentFilesResponse): IRecentFile[] => {
+  return value.slice(0, 3).map((v, i) => ({
+    id: getNonNullableValue(v.id, i.toString()),
+    name: getNonNullableValue(v.name, ''),
+    type: DocumentType.Excel,
+    webUrl: getNonNullableValue(v.webUrl, ''),
+    updatedBy: v.lastModifiedBy
+      ? getNonNullableValue(v.lastModifiedBy.user && v.lastModifiedBy.user.displayName, '')
+      : '',
+    lastUpdate: formatDate(getNonNullableValue(v.lastModifiedDateTime, ''), 'DD/MM/YYYY'),
   }));
 };

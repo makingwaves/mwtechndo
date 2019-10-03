@@ -1,0 +1,29 @@
+@import '~common/styles/settings/index.scss';
+
+.container {
+  width: 100%;
+}
+
+.label {
+  top: 50%;
+  left: $smallGutter;
+  cursor: text;
+  transform: translateY(-50%);
+  transition: all 0.2s ease-in;
+}
+
+.input {
+  outline: 0;
+  border: 0;
+  &:focus {
+    + label {
+      font-size: 12px;
+      transform: translate(-$smallGutter, -200%);
+    }
+  }
+}
+
+.filled {
+  font-size: 12px;
+  transform: translate(-$smallGutter, -200%);
+}

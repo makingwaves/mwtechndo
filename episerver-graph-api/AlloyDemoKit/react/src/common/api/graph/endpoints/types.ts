@@ -51,3 +51,16 @@ export interface ISharedFile {
   webUrl: string;
   sharedBy: string;
 }
+
+export interface IRecentFilesResponse {
+  value: RemoteItem[];
+}
+
+export interface IRecentFile {
+  id: string;
+  name: string;
+  type: DocumentType;
+  webUrl: string;
+  updatedBy: string;
+  lastUpdate: string;
+}

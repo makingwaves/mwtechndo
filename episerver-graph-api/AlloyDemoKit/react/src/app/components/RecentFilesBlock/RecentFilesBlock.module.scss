@@ -1,0 +1,10 @@
+@import '~common/styles/settings/index.scss';
+
+.container {
+  @media (min-width: $tablet-portrait) {
+    max-width: none;
+  }
+  @media (min-width: $laptops) {
+    max-width: 66%;
+  }
+}

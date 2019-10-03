@@ -1,27 +1,30 @@
 html,
 body {
-    width: 100%;
-    min-height: 100vh;
+  width: 100%;
+  min-height: 100vh;
 }
 
 body {
-    background-color: $primary-white;
-    font-family: 'Volte';
+  background-color: $primary-white;
+  font-family: 'Volte';
 }
 
 .page-container {
-    width: 90%;
-    margin: 0 auto;
-    @media (min-width: $mobile-landscape) {
-        width: 450px;
-    }
-    @media (min-width: $tablet-portrait) {
-        width: 700px;
-    }
-    @media (min-width: $tablet-landscape) {
-        width: 850px;
-    }
-    @media (min-width: $laptops) {
-        width: 1200px;
-    }
+  width: 90%;
+  margin: 0 auto;
+  @media (min-width: $mobile-landscape) {
+    width: 450px;
+  }
+  @media (min-width: $tablet-portrait) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 700px;
+  }
+  @media (min-width: $tablet-landscape) {
+    width: 850px;
+  }
+  @media (min-width: $laptops) {
+    width: 1200px;
+  }
 }

@@ -3,6 +3,16 @@ export enum IComponentKey {
   Event = 'EventsBlock',
   Tasks = 'TasksBlock',
   Shared = 'SharedFilesBlock',
+  Recent = 'RecentFilesBlock',
+}
+
+export interface IGeneralUser {
+  userFullName: string;
+  userPhotoUrl: string;
+}
+
+export interface IHeaderData extends IGeneralUser {
+  logoUrl: string;
 }
 
 // blocks: [

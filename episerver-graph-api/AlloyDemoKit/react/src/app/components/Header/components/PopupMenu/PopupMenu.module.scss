@@ -1,0 +1,25 @@
+@import '~common/styles/settings/index.scss';
+
+.image {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.userName {
+  color: $primary-black;
+}
+
+.svg {
+  transition: all 0.1s ease-in;
+}
+
+.popupShown {
+  transform: rotate(180deg);
+}
+
+.container {
+  @media (min-width: $tablet-portrait) {
+    margin-left: $mediumGutter;
+  }
+}
