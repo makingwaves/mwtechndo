@@ -7,6 +7,9 @@ import {
   normalizeUserTasks,
   normalizeUserSharedFiles,
   normalizeUserRecentOpenedFiles,
+  normalizeOnenotePages,
+  normalizeOnenoteSections,
+  normalizeOnenoteNotes,
 } from './normalizers';
 import {
   IUserResponse,
@@ -19,6 +22,9 @@ import {
   ISharedFilesResponse,
   IRecentFile,
   IRecentFilesResponse,
+  IOnenoteNote,
+  IOnenotePagesResponse,
+  IOnenoteSectionsResponse,
 } from './types';
 
 import {
@@ -27,6 +33,8 @@ import {
   getMockedUserTasks,
   getMockedSharedFiles,
   getMockedRecentlyOpenedFiles,
+  getMocedOnenoteSections,
+  getMockedOnenotePages,
 } from '../mocks';
 
 export * from './types';
@@ -64,4 +72,22 @@ export const getUserRecentOpenedFiles = (): Promise<IRecentFile[]> => {
     return Promise.resolve(getMockedRecentlyOpenedFiles());
   }
   return api.get<IRecentFile[], IRecentFilesResponse>(`/v1.0/me/drive/recent`).then(normalizeUserRecentOpenedFiles);
+};
+
+export const getOnenotePages = (): Promise<IOnenoteNote[]> => {
+  if (isDebug) {
+    return Promise.resolve(getMockedOnenotePages());
+  }
+  return api.get<IOnenoteNote[], IOnenotePagesResponse>(`/v1.0/me/onenote/pages`).then(normalizeOnenotePages);
+};
+
+export const getOnenoteSections = (): Promise<IOnenoteNote[]> => {
+  if (isDebug) {
+    return Promise.resolve(getMocedOnenoteSections());
+  }
+  return api.get<IOnenoteNote[], IOnenoteSectionsResponse>(`/v1.0/me/onenote/sections`).then(normalizeOnenoteSections);
+};
+
+export const getOnenoteNotes = (): Promise<IOnenoteNote[]> => {
+  return Promise.all([getOnenotePages(), getOnenoteSections()]).then(normalizeOnenoteNotes);
 };

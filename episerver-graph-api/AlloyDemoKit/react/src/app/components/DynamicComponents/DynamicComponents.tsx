@@ -5,6 +5,7 @@ import { IComponentKey } from 'common/api';
 import TaskBlock from './../TaskBlock/TaskBlock';
 import EventBlock from './../EventBlock/EventBlock';
 import LinksBlock from './../LinksBlock';
+import NotesBlock from './../NotesBlock';
 import AccountBlock from './../AccountBlock';
 import SharedFilesBlock from './../SharedFilesBlock';
 import RecentFilesBlock from './../RecentFilesBlock';
@@ -20,6 +21,7 @@ const components: { [key in IComponentKey]: ComponentType } = {
   [IComponentKey.Shared]: SharedFilesBlock,
   [IComponentKey.Recent]: RecentFilesBlock,
   [IComponentKey.Links]: LinksBlock,
+  [IComponentKey.Notes]: NotesBlock,
 };
 
 const DynamicComponents: FunctionComponent<DynamicComponentsProps> = ({ componentKey, ...rest }) => {

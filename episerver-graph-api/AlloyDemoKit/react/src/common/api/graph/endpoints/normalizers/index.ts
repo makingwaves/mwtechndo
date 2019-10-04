@@ -12,6 +12,9 @@ import {
   ISharedFilesResponse,
   IRecentFile,
   IRecentFilesResponse,
+  IOnenotePagesResponse,
+  IOnenoteNote,
+  IOnenoteSectionsResponse,
 } from '../types';
 
 const getNonNullableValue = <T>(value: T, defaultValue: NonNullable<T>): NonNullable<T> => {
@@ -85,4 +88,24 @@ export const normalizeUserRecentOpenedFiles = ({ value }: IRecentFilesResponse):
       : '',
     lastUpdate: formatDate(getNonNullableValue(v.lastModifiedDateTime, ''), 'DD/MM/YYYY'),
   }));
+};
+
+export const normalizeOnenotePages = ({ value }: IOnenotePagesResponse): IOnenoteNote[] => {
+  return value.map((v, i) => ({
+    id: getNonNullableValue(v.id, i.toString()),
+    name: getNonNullableValue(v.title, ''),
+    webUrl: v.links ? getNonNullableValue(v.links.oneNoteClientUrl && v.links.oneNoteClientUrl.href, '') : '',
+  }));
+};
+
+export const normalizeOnenoteSections = ({ value }: IOnenoteSectionsResponse): IOnenoteNote[] => {
+  return value.map((v, i) => ({
+    id: getNonNullableValue(v.id, i.toString()),
+    name: getNonNullableValue(v.displayName, ''),
+    webUrl: v.links ? getNonNullableValue(v.links.oneNoteClientUrl && v.links.oneNoteClientUrl.href, '') : '',
+  }));
+};
+
+export const normalizeOnenoteNotes = ([pages, sections]: [IOnenoteNote[], IOnenoteNote[]]): IOnenoteNote[] => {
+  return [...pages, ...sections];
 };

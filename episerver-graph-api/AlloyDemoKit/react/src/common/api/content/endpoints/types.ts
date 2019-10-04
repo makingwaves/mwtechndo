@@ -5,6 +5,7 @@ export enum IComponentKey {
   Shared = 'SharedFilesBlock',
   Recent = 'RecentFilesBlock',
   Links = 'LinksBlock',
+  Notes = 'NotesBlock',
 }
 
 export interface IGeneralUser {

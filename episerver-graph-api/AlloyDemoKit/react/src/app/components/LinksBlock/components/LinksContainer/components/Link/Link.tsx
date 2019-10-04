@@ -11,12 +11,12 @@ type LinkProps = ILink;
 
 const Link: FunctionComponent<LinkProps> = ({ name, logoUrl }) => {
   return (
-    <div className={'flex items-center mb-md'}>
-      <LazyImage source={logoUrl} alt={`${name} brand`} imageClass={Styles.image} />
-      <a href={name} className={classNames(Styles.link, 'm-reset ml-sm')}>
-        {name}
-      </a>
-    </div>
+    <a href={name} className={'mb-md db'}>
+      <section className={'flex items-center'}>
+        <LazyImage source={logoUrl} alt={`${name} brand`} imageClass={Styles.image} />
+        <h3 className={classNames(Styles.name, 'm-reset ml-sm fw4')}>{name}</h3>
+      </section>
+    </a>
   );
 };
 

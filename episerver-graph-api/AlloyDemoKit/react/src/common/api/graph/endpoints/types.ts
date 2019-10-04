@@ -1,4 +1,4 @@
-import { User, Event, PlannerTask, RemoteItem } from '@microsoft/microsoft-graph-types';
+import { User, Event, PlannerTask, RemoteItem, OnenotePage, OnenoteSection } from '@microsoft/microsoft-graph-types';
 
 export interface IUserResponse extends User {}
 
@@ -63,4 +63,18 @@ export interface IRecentFile {
   webUrl: string;
   updatedBy: string;
   lastUpdate: string;
+}
+
+export interface IOnenotePagesResponse {
+  value: OnenotePage[];
+}
+
+export interface IOnenoteSectionsResponse {
+  value: OnenoteSection[];
+}
+
+export interface IOnenoteNote {
+  id: string;
+  name: string;
+  webUrl: string;
 }

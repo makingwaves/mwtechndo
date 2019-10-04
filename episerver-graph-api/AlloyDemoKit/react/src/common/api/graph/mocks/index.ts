@@ -1,4 +1,4 @@
-import { IUser, IRecentFile, IEvent, ITask, ISharedFile, DocumentType } from '../endpoints';
+import { IUser, IRecentFile, IEvent, ITask, ISharedFile, DocumentType, IOnenoteNote } from '../endpoints';
 
 export const getMockedUserData = (): IUser => {
   return {
@@ -121,6 +121,56 @@ export const getMockedRecentlyOpenedFiles = (): IRecentFile[] => {
       webUrl: 'https://onet.pl',
       updatedBy: 'Magdalena Ruta',
       lastUpdate: '01/10/2019',
+    },
+  ];
+};
+
+export const getMockedOnenotePages = (): IOnenoteNote[] => {
+  return [
+    {
+      id: '1',
+      name: 'Meeting Summary MatPrat 23.09',
+      webUrl: 'https://onet.pl',
+    },
+    {
+      id: '2',
+      name: 'Meeting Summary MatPrat 10.10',
+      webUrl: 'https://onet.pl',
+    },
+    {
+      id: '3',
+      name: 'Meeting Summary Sats 22.03',
+      webUrl: 'https://onet.pl',
+    },
+    {
+      id: '4',
+      name: 'Retro 31.08 - actions points',
+      webUrl: 'https://onet.pl',
+    },
+  ];
+};
+
+export const getMocedOnenoteSections = (): IOnenoteNote[] => {
+  return [
+    {
+      id: '1a',
+      name: 'BFM Workshop',
+      webUrl: 'https://onet.pl',
+    },
+    {
+      id: '2a',
+      name: 'Design Teams Status 2019',
+      webUrl: 'https://onet.pl',
+    },
+    {
+      id: '3a',
+      name: 'Design Teams Status 2018',
+      webUrl: 'https://onet.pl',
+    },
+    {
+      id: '4a',
+      name: 'Innovation Jam - ideas',
+      webUrl: 'https://onet.pl',
     },
   ];
 };
