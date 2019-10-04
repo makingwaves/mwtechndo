@@ -1,6 +1,7 @@
 @import '~common/styles/settings/index.scss';
 
 .image {
+  min-width: 25px;
   width: 25px;
   height: 25px;
   border-radius: 50%;

@@ -16,9 +16,6 @@ body {
     width: 450px;
   }
   @media (min-width: $tablet-portrait) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     width: 700px;
   }
   @media (min-width: $tablet-landscape) {

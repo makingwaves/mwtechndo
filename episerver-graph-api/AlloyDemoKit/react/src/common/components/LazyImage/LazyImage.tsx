@@ -22,7 +22,7 @@ const LazyImage: FunctionComponent<LazyImageProps> = ({ alt, source, containerCl
         setLoading(false);
       };
       const onError = (): void => {
-        console.error('error');
+        setLoading(false);
       };
       setLoading(true);
       loadImage(imgRef.current, onComplete, onError);

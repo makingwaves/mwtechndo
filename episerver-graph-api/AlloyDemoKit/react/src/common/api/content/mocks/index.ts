@@ -1,4 +1,4 @@
-import { IComponentKey, IHeaderData, ILink } from '../endpoints';
+import { IComponentKey, IHeaderData, ILink, IBrand, ISocials } from '../endpoints';
 
 export const getMockedIntranetBlocks = (): IComponentKey[] => {
   return [
@@ -48,4 +48,22 @@ export const getMockedLinks = (): ILink[] => {
         'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq_-YYhPU02IRu4ccHUMW0Z-mo0e9p3HK_zA2LsTl1CqlmgHPc',
     },
   ];
+};
+
+export const getMockedBrand = (): IBrand => {
+  return {
+    name: 'We are Making Waves',
+    logoUrl:
+      'https://media.licdn.com/dms/image/C4E0BAQF9rMHYgX2-MA/company-logo_200_200/0?e=2159024400&v=beta&t=YT7G_R2EyhrrDalWFT-CiLnqz4AEQb5dcmOCz2mNUt0',
+    policyUrl: 'https://onet.pl',
+    description: 'A mamber of the NoA family',
+  };
+};
+
+export const getMockedSocial = (): ISocials => {
+  return {
+    facebook: 'https://facebook.com',
+    linkedin: 'https://linkedin.com',
+    instagram: 'https://instagram.com',
+  };
 };

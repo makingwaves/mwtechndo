@@ -1,0 +1,9 @@
+@import '~common/styles/settings/index.scss';
+
+.main {
+  @media (min-width: $tablet-portrait) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

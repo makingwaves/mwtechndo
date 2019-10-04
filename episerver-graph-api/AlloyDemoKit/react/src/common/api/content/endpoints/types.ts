@@ -24,6 +24,18 @@ export interface ILink {
   logoUrl: string;
 }
 
+export interface IBrand {
+  name: string;
+  logoUrl: string;
+  policyUrl: string;
+  description: string;
+}
+
+export interface ISocials {
+  linkedin: string;
+  facebook: string;
+  instagram: string;
+}
 // blocks: [
 //   "Hi",
 //   "Events",
