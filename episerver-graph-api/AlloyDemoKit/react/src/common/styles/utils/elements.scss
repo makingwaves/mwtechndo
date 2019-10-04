@@ -1,13 +1,13 @@
 .block {
-  flex: 1 1 100%;
+  width: 100%;
   padding: $mediumGutter;
-  margin-top: $mediumGutter;
+  margin: $mediumGutter $smallGutter 0;
   background-color: $primary-grey;
   @media (min-width: $tablet-portrait) {
-    max-width: 49%;
+    width: calc(50% - 20px);
   }
   @media (min-width: $laptops) {
-    max-width: 32%;
+    width: calc(33.3% - 20px);
   }
 }
 
