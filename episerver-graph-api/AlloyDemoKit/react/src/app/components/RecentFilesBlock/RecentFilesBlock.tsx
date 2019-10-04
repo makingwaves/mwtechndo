@@ -10,7 +10,7 @@ import RecentFilesContainer from './components/RecentFilesContainer';
 
 type RecentFilesBlockProps = {};
 
-const RecentFilesBlock: FunctionComponent<RecentFilesBlockProps> = ({}) => {
+const RecentFilesBlock: FunctionComponent<RecentFilesBlockProps> = () => {
   const [loading, setLoading] = useState<boolean>(true);
   const [recentFiles, setRecentFiles] = useState<IRecentFile[]>([]);
 

@@ -7,7 +7,7 @@ import ContentPlaceholder from 'common/components/ContentPlaceholder';
 
 type LinksBlockProps = {};
 
-const LinksBlock: FunctionComponent<LinksBlockProps> = ({}) => {
+const LinksBlock: FunctionComponent<LinksBlockProps> = () => {
   const [loading, setLoading] = useState<boolean>(true);
   const [links, setLinks] = useState<ILink[]>([]);
 

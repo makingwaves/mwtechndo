@@ -1,9 +1,10 @@
 .block {
   width: 100%;
   padding: $mediumGutter;
-  margin: $mediumGutter $smallGutter 0;
+  margin-top: $mediumGutter;
   background-color: $primary-grey;
   @media (min-width: $tablet-portrait) {
+    margin: $mediumGutter $smallGutter 0;
     width: calc(50% - 20px);
   }
   @media (min-width: $laptops) {

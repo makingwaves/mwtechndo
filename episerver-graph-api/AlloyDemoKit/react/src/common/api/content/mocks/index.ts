@@ -7,6 +7,7 @@ export const getMockedIntranetBlocks = (): IComponentKey[] => {
     IComponentKey.Tasks,
     IComponentKey.Shared,
     IComponentKey.Recent,
+    IComponentKey.Video,
     IComponentKey.Links,
     IComponentKey.Notes,
   ];

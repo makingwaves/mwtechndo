@@ -1,10 +1,16 @@
 @import '~common/styles/settings/index.scss';
 
 .container {
+  padding: 0;
   @media (min-width: $tablet-portrait) {
     width: 100%;
   }
   @media (min-width: $laptops) {
     width: calc(66.6% - 20px);
   }
+}
+
+.iframe {
+  border: 0;
+  max-width: 100%;
 }
