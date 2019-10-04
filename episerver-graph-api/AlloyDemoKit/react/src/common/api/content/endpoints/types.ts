@@ -4,6 +4,7 @@ export enum IComponentKey {
   Tasks = 'TasksBlock',
   Shared = 'SharedFilesBlock',
   Recent = 'RecentFilesBlock',
+  Links = 'LinksBlock',
 }
 
 export interface IGeneralUser {
@@ -12,6 +13,14 @@ export interface IGeneralUser {
 }
 
 export interface IHeaderData extends IGeneralUser {
+  logoUrl: string;
+}
+
+export interface ILinksResponse {}
+
+export interface ILink {
+  id: string;
+  name: string;
   logoUrl: string;
 }
 

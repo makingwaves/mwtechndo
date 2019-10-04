@@ -14,7 +14,7 @@ type LazyImageProps = {
 
 const LazyImage: FunctionComponent<LazyImageProps> = ({ alt, source, containerClass = '', imageClass = '' }) => {
   const imgRef = useRef<HTMLImageElement>(null);
-  const [loading, setLoading] = useState<boolean>(false);
+  const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
     if (!!source && imgRef.current) {
@@ -30,7 +30,7 @@ const LazyImage: FunctionComponent<LazyImageProps> = ({ alt, source, containerCl
   }, [source]);
 
   return (
-    <div className={classNames(containerClass, { [Styles.loading]: loading })}>
+    <div className={classNames(containerClass, 'relative', Styles.container, { [Styles.completed]: !loading })}>
       <img ref={imgRef} src={source} alt={alt} className={imageClass} />
     </div>
   );

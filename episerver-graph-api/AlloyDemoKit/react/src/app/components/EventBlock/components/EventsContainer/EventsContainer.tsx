@@ -1,4 +1,3 @@
-import classNames from 'classnames';
 import React, { FunctionComponent, MouseEvent } from 'react';
 
 import { IEvent } from 'common/api';
@@ -16,7 +15,7 @@ const EventsContainer: FunctionComponent<EventsContainerProps> = ({ events }) =>
   return (
     <section>
       <SquareArrow onClick={onArrowClick} />
-      <h2 className={classNames('mt-reset mb-lg title-block')}>Upcoming events</h2>
+      <h2 className={'mt-reset mb-lg title-block'}>Upcoming events</h2>
       {events.map(e => (
         <Event key={e.id} {...e} />
       ))}

@@ -1,8 +1,8 @@
 import { isDebug } from 'common/utils';
 
-import { IComponentKey, IHeaderData } from './types';
+import { IComponentKey, IHeaderData, ILink } from './types';
 
-import { getMockedIntranetBlocks, getMockedHeaderData } from '../mocks';
+import { getMockedIntranetBlocks, getMockedHeaderData, getMockedLinks } from '../mocks';
 
 export * from './types';
 
@@ -18,4 +18,11 @@ export const getHeaderData = (): IHeaderData => {
     return getMockedHeaderData();
   }
   return {} as IHeaderData;
+};
+
+export const getLinks = (): Promise<ILink[]> => {
+  if (isDebug) {
+    return Promise.resolve(getMockedLinks());
+  }
+  return Promise.resolve([]);
 };
