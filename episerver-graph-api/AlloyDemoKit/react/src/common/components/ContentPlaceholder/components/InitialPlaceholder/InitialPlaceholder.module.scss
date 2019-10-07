@@ -1,0 +1,61 @@
+@import '~common/styles/settings/index.scss';
+
+@keyframes placeHolderShimmer {
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: $primary-grey;
+}
+
+.placeholder {
+  height: 170px;
+  background: linear-gradient(to right, $primary-white 8%, $secondary-grey 18%, $primary-white 33%);
+  background-size: 800px 104px;
+  animation: placeHolderShimmer 1s linear infinite;
+}
+
+.item {
+  left: 0;
+  right: 0;
+  background-color: $primary-grey;
+}
+
+.underTitle {
+  top: 20px;
+  height: 30px;
+}
+
+.upToItem {
+  height: 20px;
+  &.upFirst {
+    top: 50px;
+  }
+  &.upSecond {
+    top: 90px;
+  }
+  &.upThird {
+    top: 130px;
+  }
+}
+
+.nextToItem {
+  height: 20px;
+  left: 50%;
+  &.nextFirst {
+    top: 70px;
+  }
+  &.nextSecond {
+    top: 110px;
+  }
+  &.nextThird {
+    top: 150px;
+  }
+}
