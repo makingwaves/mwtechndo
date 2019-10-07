@@ -1,4 +1,4 @@
-import { IComponentKey, IHeaderData, ILink, IBrand, ISocials } from '../endpoints';
+import { IComponentKey, IHeaderData, ILink, IBrand, ISocials, IRecentlyApps } from '../endpoints';
 
 export const getMockedIntranetBlocks = (): IComponentKey[] => {
   return [
@@ -68,4 +68,35 @@ export const getMockedSocial = (): ISocials => {
     linkedin: 'https://linkedin.com',
     instagram: 'https://instagram.com',
   };
+};
+
+export const getMockedRecentlyUsedApps = (): IRecentlyApps[] => {
+  return [
+    {
+      id: '1',
+      appUrl: 'https://products.office.com/pl-pl/microsoft-teams/group-chat-software',
+      logoUrl: 'https://www.clipartmax.com/png/middle/19-193109_microsoft-teams-microsoft-teams-logo-vector.png',
+      displayName: 'Microsoft Teams',
+    },
+    {
+      id: '2',
+      appUrl: 'https://onedrive.live.com/about/pl-pl/',
+      logoUrl: 'http://pluspng.com/img-png/onedrive-logo-vector-png--460.png',
+      displayName: 'Microsoft OneDrive',
+    },
+    {
+      id: '3',
+      appUrl: 'https://products.office.com/pl-pl/onenote/digital-note-taking-app',
+      logoUrl:
+        'https://www.pinclipart.com/picdir/middle/249-2491946_onenote-png-clipart-microsoft-onenote-microsoft-powerpoint-transparent.png',
+      displayName: 'Microsoft OneNote',
+    },
+    {
+      id: '4',
+      appUrl: 'https://outlook.live.com/owa/',
+      logoUrl:
+        'https://i7.pngguru.com/preview/1008/25/122/outlook-com-microsoft-outlook-email-computer-icons-microsoft.jpg',
+      displayName: 'Microsoft Outlook',
+    },
+  ];
 };

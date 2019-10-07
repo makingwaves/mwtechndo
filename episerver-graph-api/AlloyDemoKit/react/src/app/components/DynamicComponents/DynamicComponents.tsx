@@ -7,9 +7,11 @@ import EventBlock from './../EventBlock/EventBlock';
 import LinksBlock from './../LinksBlock';
 import NotesBlock from './../NotesBlock';
 import StreamBlock from './../StreamBlock';
+import PosterBlock from '../PosterBlock';
 import AccountBlock from './../AccountBlock';
 import SharedFilesBlock from './../SharedFilesBlock';
 import RecentFilesBlock from './../RecentFilesBlock';
+import RecentyAppsBlock from '../RecentyAppsBlock';
 
 type DynamicComponentsProps = {
   ownProps: IContent;
@@ -25,6 +27,8 @@ const components: { [key in IComponentKey]: ComponentType<IContent> } = {
   [IComponentKey.Links]: LinksBlock,
   [IComponentKey.Notes]: NotesBlock,
   [IComponentKey.Video]: StreamBlock,
+  [IComponentKey.Apps]: RecentyAppsBlock,
+  [IComponentKey.Poster]: PosterBlock,
 };
 
 const DynamicComponents: FunctionComponent<DynamicComponentsProps> = ({ componentKey, ownProps }) => {

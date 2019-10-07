@@ -1,91 +1,91 @@
 .pvt-mini {
-  padding-top: $miniGutter;
-  padding-bottom: $miniGutter;
+  padding-top: $miniGutter !important;
+  padding-bottom: $miniGutter !important;
 }
 
 .pvt-sm {
-  padding-top: $smallGutter;
-  padding-bottom: $smallGutter;
+  padding-top: $smallGutter !important;
+  padding-bottom: $smallGutter !important;
 }
 
 .pvt-md {
-  padding-top: $mediumGutter;
-  padding-bottom: $mediumGutter;
+  padding-top: $mediumGutter !important;
+  padding-bottom: $mediumGutter !important;
 }
 
 .pvt-lg {
-  padding-top: $largeGutter;
-  padding-bottom: $largeGutter;
+  padding-top: $largeGutter !important;
+  padding-bottom: $largeGutter !important;
 }
 
 .pht-mini {
-  padding-top: $miniGutter;
-  padding-bottom: $miniGutter;
+  padding-top: $miniGutter !important;
+  padding-bottom: $miniGutter !important;
 }
 
 .pht-sm {
-  padding-left: $smallGutter;
-  padding-right: $smallGutter;
+  padding-left: $smallGutter !important;
+  padding-right: $smallGutter !important;
 }
 
 .pht-md {
-  padding-left: $mediumGutter;
-  padding-right: $mediumGutter;
+  padding-left: $mediumGutter !important;
+  padding-right: $mediumGutter !important;
 }
 
 .pht-lg {
-  padding-left: $largeGutter;
-  padding-right: $largeGutter;
+  padding-left: $largeGutter !important;
+  padding-right: $largeGutter !important;
 }
 
 .mvt-mini {
-  padding-top: $miniGutter;
-  padding-bottom: $miniGutter;
+  padding-top: $miniGutter !important;
+  padding-bottom: $miniGutter !important;
 }
 
 .mvt-sm {
-  padding-top: $smallGutter;
-  padding-bottom: $smallGutter;
+  padding-top: $smallGutter !important;
+  padding-bottom: $smallGutter !important;
 }
 
 .mvt-md {
-  padding-top: $mediumGutter;
-  padding-bottom: $mediumGutter;
+  padding-top: $mediumGutter !important;
+  padding-bottom: $mediumGutter !important;
 }
 
 .mvt-lg {
-  padding-top: $largeGutter;
-  padding-bottom: $largeGutter;
+  padding-top: $largeGutter !important;
+  padding-bottom: $largeGutter !important;
 }
 
 .mht-mini {
-  padding-top: $miniGutter;
-  padding-bottom: $miniGutter;
+  padding-top: $miniGutter !important;
+  padding-bottom: $miniGutter !important;
 }
 
 .mht-sm {
-  padding-left: $smallGutter;
-  padding-right: $smallGutter;
+  padding-left: $smallGutter !important;
+  padding-right: $smallGutter !important;
 }
 
 .mht-md {
-  padding-left: $mediumGutter;
-  padding-right: $mediumGutter;
+  padding-left: $mediumGutter !important;
+  padding-right: $mediumGutter !important;
 }
 
 .mht-lg {
-  padding-left: $largeGutter;
-  padding-right: $largeGutter;
+  padding-left: $largeGutter !important;
+  padding-right: $largeGutter !important;
 }
 
 .hidden-block {
-  position: absolute;
-  left: 0;
-  top: 0;
-  max-width: 0;
-  max-height: 0;
-  width: 0;
-  height: 0;
-  visibility: hidden;
-  overflow: hidden;
+  position: absolute !important;
+  left: 0 !important;
+  top: 0 !important;
+  max-width: 0 !important;
+  max-height: 0 !important;
+  width: 0 !important;
+  height: 0 !important;
+  visibility: hidden !important;
+  overflow: hidden !important;
 }

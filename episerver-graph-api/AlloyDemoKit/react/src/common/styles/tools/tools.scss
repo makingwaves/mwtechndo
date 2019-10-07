@@ -17,10 +17,10 @@ $sides: (
   @each $sidePrefix, $sideValue in $sides {
     $property: if($sidePrefix == '', '', -#{$sideValue});
     .m#{$sidePrefix}-#{$spacePrefix} {
-      margin#{$property}: #{$spaceValue};
+      margin#{$property}: #{$spaceValue} !important;
     }
     .p#{$sidePrefix}-#{$spacePrefix} {
-      padding#{$property}: #{$spaceValue};
+      padding#{$property}: #{$spaceValue} !important;
     }
   }
 }

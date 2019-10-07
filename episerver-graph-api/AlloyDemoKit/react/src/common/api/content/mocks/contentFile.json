@@ -517,7 +517,7 @@
           "propertyDataType": "PropertyLongString"
         },
         "sectionTitle": {
-          "value": "",
+          "value": "Frequently used apps",
           "propertyDataType": "PropertyLongString"
         },
         "graphAPIUrl": {
@@ -577,6 +577,10 @@
         },
         "heading": {
           "value": "Poster",
+          "propertyDataType": "PropertyLongString"
+        },
+        "contentUrl": {
+          "value": "https://blog.makingwaves.com",
           "propertyDataType": "PropertyLongString"
         },
         "sectionTitle": {

@@ -1,0 +1,15 @@
+@import '~common/styles/settings/index.scss';
+
+.image {
+  width: 30px;
+  height: 30px;
+}
+
+.linkName {
+  color: $primary-black;
+  font-size: 14px;
+}
+
+.container {
+  border-bottom: 1px solid #eee;
+}

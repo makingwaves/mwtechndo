@@ -7,6 +7,8 @@ export enum IComponentKey {
   Links = 'Links',
   Notes = 'Notes',
   Video = 'Video',
+  Apps = 'Apps',
+  Poster = 'Poster',
 }
 
 export interface IContentResponse {
@@ -17,7 +19,8 @@ export interface IContentResponse {
 
 export interface IContentProperties {
   name: IComponentKey;
-  subTitle?: IProperty;
+  subTitle: IProperty;
+  contentUrl: IProperty;
   sectionTitle: IProperty;
 }
 
@@ -26,6 +29,7 @@ export interface IProperty {
 }
 
 export interface IContent {
+  url?: string;
   type: IComponentKey;
   title: string;
   subTitle?: string;
@@ -59,4 +63,11 @@ export interface ISocials {
   linkedin: string;
   facebook: string;
   instagram: string;
+}
+
+export interface IRecentlyApps {
+  id: string;
+  appUrl: string;
+  logoUrl: string;
+  displayName: string;
 }

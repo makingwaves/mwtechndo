@@ -1,9 +1,15 @@
 import { isDebug } from 'common/utils';
 
 import { normalizeContent } from './normalizers';
-import { IHeaderData, ILink, IBrand, ISocials, IContent } from './types';
+import { IHeaderData, ILink, IBrand, ISocials, IContent, IRecentlyApps } from './types';
 
-import { getMockedHeaderData, getMockedLinks, getMockedBrand, getMockedSocial } from '../mocks';
+import {
+  getMockedHeaderData,
+  getMockedLinks,
+  getMockedBrand,
+  getMockedSocial,
+  getMockedRecentlyUsedApps,
+} from '../mocks';
 
 export * from './types';
 
@@ -40,4 +46,11 @@ export const getSocials = (): ISocials => {
     return getMockedSocial();
   }
   return {} as ISocials;
+};
+
+export const getRecentlyUsedApps = (): Promise<IRecentlyApps[]> => {
+  if (isDebug) {
+    return Promise.resolve(getMockedRecentlyUsedApps());
+  }
+  return Promise.resolve([]);
 };

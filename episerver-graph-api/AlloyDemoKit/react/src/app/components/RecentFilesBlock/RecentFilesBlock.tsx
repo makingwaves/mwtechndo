@@ -15,12 +15,12 @@ const RecentFilesBlock: FunctionComponent<RecentFilesBlockProps> = () => {
   const [recentFiles, setRecentFiles] = useState<IRecentFile[]>([]);
 
   useEffect(() => {
-    const fetchUserData = async (): Promise<void> => {
+    const fetchFiles = async (): Promise<void> => {
       const recentFiles = await getUserRecentOpenedFiles();
       setLoading(false);
       setRecentFiles(recentFiles);
     };
-    fetchUserData();
+    fetchFiles();
   }, []);
 
   return (
