@@ -1,12 +1,34 @@
 export enum IComponentKey {
-  Hi = 'AccountBlock',
-  Event = 'EventsBlock',
-  Tasks = 'TasksBlock',
-  Shared = 'SharedFilesBlock',
-  Recent = 'RecentFilesBlock',
-  Links = 'LinksBlock',
-  Notes = 'NotesBlock',
-  Video = 'VideoBlock',
+  Hi = 'Hi',
+  Event = 'Events',
+  Tasks = 'Tasks',
+  Shared = 'Shared Files',
+  Recent = 'Recent Files',
+  Links = 'Links',
+  Notes = 'Notes',
+  Video = 'Video',
+}
+
+export interface IContentResponse {
+  mainContentArea: {
+    expandedValue: IContentProperties[];
+  };
+}
+
+export interface IContentProperties {
+  name: IComponentKey;
+  subTitle?: IProperty;
+  sectionTitle: IProperty;
+}
+
+export interface IProperty {
+  value: string;
+}
+
+export interface IContent {
+  type: IComponentKey;
+  title: string;
+  subTitle?: string;
 }
 
 export interface IGeneralUser {
@@ -38,15 +60,3 @@ export interface ISocials {
   facebook: string;
   instagram: string;
 }
-// blocks: [
-//   "Hi",
-//   "Events",
-//   "Tasks",
-//   "Shared Files",
-//   "Recent Files",
-//   "Links",
-//   "Apps",
-//   "Poster",
-//   "Video",
-//   "Notes",
-// ]

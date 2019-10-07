@@ -1,6 +1,6 @@
 import React, { FunctionComponent, ComponentType } from 'react';
 
-import { IComponentKey } from 'common/api';
+import { IComponentKey, IContent } from 'common/api';
 
 import TaskBlock from './../TaskBlock/TaskBlock';
 import EventBlock from './../EventBlock/EventBlock';
@@ -12,10 +12,11 @@ import SharedFilesBlock from './../SharedFilesBlock';
 import RecentFilesBlock from './../RecentFilesBlock';
 
 type DynamicComponentsProps = {
+  ownProps: IContent;
   componentKey: IComponentKey;
 };
 
-const components: { [key in IComponentKey]: ComponentType } = {
+const components: { [key in IComponentKey]: ComponentType<IContent> } = {
   [IComponentKey.Hi]: AccountBlock,
   [IComponentKey.Event]: EventBlock,
   [IComponentKey.Tasks]: TaskBlock,
@@ -26,9 +27,12 @@ const components: { [key in IComponentKey]: ComponentType } = {
   [IComponentKey.Video]: StreamBlock,
 };
 
-const DynamicComponents: FunctionComponent<DynamicComponentsProps> = ({ componentKey, ...rest }) => {
+const DynamicComponents: FunctionComponent<DynamicComponentsProps> = ({ componentKey, ownProps }) => {
   const Component = components[componentKey];
-  return <Component {...rest} />;
+  if (Component) {
+    return <Component {...ownProps} />;
+  }
+  return null;
 };
 
 export default DynamicComponents;

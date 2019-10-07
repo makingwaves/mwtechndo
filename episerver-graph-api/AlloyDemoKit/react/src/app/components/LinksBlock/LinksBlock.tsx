@@ -1,11 +1,11 @@
 import React, { FunctionComponent, useState, useEffect } from 'react';
 
-import { ILink, getLinks } from 'common/api';
+import { ILink, getLinks, IContent } from 'common/api';
 
 import LinksContainer from './components/LinksContainer/LinksContainer';
 import ContentPlaceholder from 'common/components/ContentPlaceholder';
 
-type LinksBlockProps = {};
+type LinksBlockProps = IContent;
 
 const LinksBlock: FunctionComponent<LinksBlockProps> = () => {
   const [loading, setLoading] = useState<boolean>(true);

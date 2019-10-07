@@ -1,36 +1,5 @@
-@import '~common/styles/settings/index.scss';
-
-@keyframes scaling {
-  0%,
-  100% {
-    transform: scale(1);
-  }
-  35% {
-    transform: scale(1.05);
-  }
-  70% {
-    transform: scale(0.95);
-  }
-}
-
-.container {
-  &:after {
-    content: '';
-    position: absolute;
-    left: -1px;
-    top: -1px;
-    right: -1px;
-    bottom: -1px;
-    z-index: 2;
-    border-radius: 50%;
-    background-color: $secondary-grey;
-    animation: scaling 1s linear infinite;
-    transition: all 0.2s ease-in;
-  }
-}
-
-.completed {
-  &:after {
-    opacity: 0;
-  }
+.spinner {
+  width: 15px !important;
+  height: 15px !important;
+  border-width: 2px !important;
 }

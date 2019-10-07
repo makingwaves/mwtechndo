@@ -3,7 +3,9 @@ import React, { FunctionComponent, memo } from 'react';
 
 import Styles from './StreamBlock.module.scss';
 
-type StreamBlockProps = {};
+import { IContent } from 'common/api';
+
+type StreamBlockProps = IContent;
 
 const StreamBlock: FunctionComponent<StreamBlockProps> = () => {
   return (

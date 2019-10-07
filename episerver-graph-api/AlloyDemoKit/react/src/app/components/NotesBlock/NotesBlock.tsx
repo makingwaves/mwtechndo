@@ -1,11 +1,11 @@
 import React, { FunctionComponent, useState, useEffect } from 'react';
 
-import { IOnenoteNote, getOnenoteNotes } from 'common/api';
+import { IOnenoteNote, getOnenoteNotes, IContent } from 'common/api';
 
 import NotesContainer from './components/NotesContainer';
 import ContentPlaceholder from 'common/components/ContentPlaceholder';
 
-type NotesBlockProps = {};
+type NotesBlockProps = IContent;
 
 const NotesBlock: FunctionComponent<NotesBlockProps> = () => {
   const [loading, setLoading] = useState<boolean>(true);

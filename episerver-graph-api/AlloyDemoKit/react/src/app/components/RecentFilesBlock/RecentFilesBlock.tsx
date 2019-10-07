@@ -3,12 +3,12 @@ import React, { FunctionComponent, useEffect, useState } from 'react';
 
 import Styles from './RecentFilesBlock.module.scss';
 
-import { IRecentFile, getUserRecentOpenedFiles } from 'common/api';
+import { IRecentFile, getUserRecentOpenedFiles, IContent } from 'common/api';
 
 import ContentPlaceholder from 'common/components/ContentPlaceholder';
 import RecentFilesContainer from './components/RecentFilesContainer';
 
-type RecentFilesBlockProps = {};
+type RecentFilesBlockProps = IContent;
 
 const RecentFilesBlock: FunctionComponent<RecentFilesBlockProps> = () => {
   const [loading, setLoading] = useState<boolean>(true);

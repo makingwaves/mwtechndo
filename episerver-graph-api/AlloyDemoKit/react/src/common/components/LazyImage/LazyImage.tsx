@@ -5,6 +5,8 @@ import Styles from './LazyImage.module.scss';
 
 import { loadImage } from 'common/utils';
 
+import Spinner from '../Spinner';
+
 type LazyImageProps = {
   alt: string;
   source: string;
@@ -30,7 +32,8 @@ const LazyImage: FunctionComponent<LazyImageProps> = ({ alt, source, containerCl
   }, [source]);
 
   return (
-    <div className={classNames(containerClass, 'relative', Styles.container, { [Styles.completed]: !loading })}>
+    <div className={classNames(containerClass, 'flex items-center justify-center h-100')}>
+      {loading && <Spinner containerClass={Styles.spinner} />}
       <img ref={imgRef} src={source} alt={alt} className={imageClass} />
     </div>
   );

@@ -3,9 +3,9 @@ import React, { FunctionComponent, useEffect, useState } from 'react';
 import ContentPlaceholder from 'common/components/ContentPlaceholder';
 import SharedFilesContainer from './components/SharedFilesContainer';
 
-import { ISharedFile, getUserSharedFiles } from 'common/api';
+import { ISharedFile, getUserSharedFiles, IContent } from 'common/api';
 
-type SharedFilesBlockProps = {};
+type SharedFilesBlockProps = IContent;
 
 const SharedFilesBlock: FunctionComponent<SharedFilesBlockProps> = () => {
   const [loading, setLoading] = useState<boolean>(true);

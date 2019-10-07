@@ -1,11 +1,11 @@
 import React, { FunctionComponent, useState, useEffect } from 'react';
 
-import { getUserEvents, IEvent } from 'common/api';
+import { getUserEvents, IEvent, IContent } from 'common/api';
 
 import EventsContainer from './components/EventsContainer';
 import ContentPlaceholder from 'common/components/ContentPlaceholder';
 
-type EventBlockProps = {};
+type EventBlockProps = IContent;
 
 const EventBlock: FunctionComponent<EventBlockProps> = () => {
   const [loading, setLoading] = useState<boolean>(true);

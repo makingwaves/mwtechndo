@@ -1,22 +1,17 @@
 import { isDebug } from 'common/utils';
 
-import { IComponentKey, IHeaderData, ILink, IBrand, ISocials } from './types';
+import { normalizeContent } from './normalizers';
+import { IHeaderData, ILink, IBrand, ISocials, IContent } from './types';
 
-import {
-  getMockedIntranetBlocks,
-  getMockedHeaderData,
-  getMockedLinks,
-  getMockedBrand,
-  getMockedSocial,
-} from '../mocks';
+import { getMockedHeaderData, getMockedLinks, getMockedBrand, getMockedSocial } from '../mocks';
 
 export * from './types';
 
-export const getIntranetBlocks = (): IComponentKey[] => {
+export const getContent = (): Promise<IContent[]> => {
   if (isDebug) {
-    return getMockedIntranetBlocks();
+    return import('../mocks/contentFile.json').then(normalizeContent);
   }
-  return [];
+  return {} as Promise<IContent[]>;
 };
 
 export const getHeaderData = (): IHeaderData => {

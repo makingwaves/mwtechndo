@@ -1,11 +1,11 @@
 import React, { FunctionComponent, useState, useEffect } from 'react';
 
-import { ITask, getUserTasks } from 'common/api';
+import { ITask, getUserTasks, IContent } from 'common/api';
 
 import TasksContainer from './components/TasksContainer/TasksContainer';
 import ContentPlaceholder from 'common/components/ContentPlaceholder/ContentPlaceholder';
 
-type TaskBlockProps = {};
+type TaskBlockProps = IContent;
 
 const TaskBlock: FunctionComponent<TaskBlockProps> = () => {
   const [loading, setLoading] = useState<boolean>(true);

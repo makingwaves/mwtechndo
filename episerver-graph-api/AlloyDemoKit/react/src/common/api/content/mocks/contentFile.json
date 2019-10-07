@@ -1,0 +1,733 @@
+{
+  "contentLink": {
+    "id": 333,
+    "workId": 0,
+    "guidValue": "14f45264-4655-4785-8db1-42a7f88dc2ef",
+    "providerName": null,
+    "url": "http://alloy.localmachine.info/en/dashboard/"
+  },
+  "name": "Dashboard",
+  "language": {
+    "link": "http://alloy.localmachine.info/en/dashboard/",
+    "displayName": "English",
+    "name": "en"
+  },
+  "existingLanguages": [
+    {
+      "link": "http://alloy.localmachine.info/en/dashboard/",
+      "displayName": "English",
+      "name": "en"
+    }
+  ],
+  "masterLanguage": {
+    "link": "http://alloy.localmachine.info/en/dashboard/",
+    "displayName": "English",
+    "name": "en"
+  },
+  "contentType": ["Page", "GraphApiPage"],
+  "parentLink": {
+    "id": 5,
+    "workId": 0,
+    "guidValue": "050af1c7-9368-4177-b5af-398f0d542b21",
+    "providerName": null,
+    "url": "http://alloy.localmachine.info/en/"
+  },
+  "routeSegment": "dashboard",
+  "url": "http://alloy.localmachine.info/en/dashboard/",
+  "changed": "2019-03-13T11:35:26Z",
+  "created": "2019-03-13T11:35:21Z",
+  "startPublish": "2019-03-13T11:35:26Z",
+  "stopPublish": null,
+  "saved": "2019-09-25T09:49:08Z",
+  "status": "Published",
+  "category": {
+    "value": [],
+    "propertyDataType": "PropertyCategory"
+  },
+  "googleFont": {
+    "value": "",
+    "propertyDataType": "PropertyLongString"
+  },
+  "metaTitle": {
+    "value": "",
+    "propertyDataType": "PropertyLongString"
+  },
+  "pageImage": {
+    "value": null,
+    "propertyDataType": "PropertyContentReference"
+  },
+  "cssFiles": {
+    "value": [],
+    "propertyDataType": "PropertyLinkCollection"
+  },
+  "scriptFiles": {
+    "value": [],
+    "propertyDataType": "PropertyLinkCollection"
+  },
+  "css": {
+    "value": "",
+    "propertyDataType": "PropertyLongString"
+  },
+  "scripts": {
+    "value": "",
+    "propertyDataType": "PropertyLongString"
+  },
+  "reviewIn": {
+    "value": "",
+    "propertyDataType": "PropertyLongString"
+  },
+  "amountOfTime": {
+    "value": "",
+    "propertyDataType": "PropertyLongString"
+  },
+  "metaKeywords": {
+    "value": null,
+    "propertyDataType": "PropertyStringList"
+  },
+  "teaserText": {
+    "value": "Widget page",
+    "propertyDataType": "PropertyLongString"
+  },
+  "hideSiteHeader": {
+    "value": null,
+    "propertyDataType": "PropertyBoolean"
+  },
+  "metaDescription": {
+    "value": "",
+    "propertyDataType": "PropertyLongString"
+  },
+  "hideSiteFooter": {
+    "value": null,
+    "propertyDataType": "PropertyBoolean"
+  },
+  "mainBody": {
+    "value": "<p>This is a page with widgets</p>",
+    "propertyDataType": "PropertyXhtmlString"
+  },
+  "mainContentArea": {
+    "expandedValue": [
+      {
+        "contentLink": {},
+        "name": "Hi",
+        "language": {},
+        "existingLanguages": [
+          {
+            "link": null,
+            "displayName": "English",
+            "name": "en"
+          }
+        ],
+        "masterLanguage": {
+          "link": null,
+          "displayName": "English",
+          "name": "en"
+        },
+        "contentType": ["Block", "O365HiBlock"],
+        "parentLink": {
+          "id": 336,
+          "workId": 0,
+          "guidValue": "448b6fa1-eb23-4fe8-a707-670bf5204f85",
+          "providerName": null,
+          "url": null
+        },
+        "routeSegment": null,
+        "url": null,
+        "changed": "2019-09-24T15:12:15Z",
+        "created": "2019-09-24T15:12:15Z",
+        "startPublish": "2019-09-24T15:12:15Z",
+        "stopPublish": null,
+        "saved": "2019-09-25T09:48:27Z",
+        "status": "Published",
+        "category": {
+          "value": [],
+          "propertyDataType": "PropertyCategory"
+        },
+        "heading": {
+          "value": "",
+          "propertyDataType": "PropertyLongString"
+        },
+        "hiText": {
+          "value": "lalal",
+          "propertyDataType": "PropertyLongString"
+        },
+        "sectionTitle": {
+          "value": "",
+          "propertyDataType": "PropertyLongString"
+        },
+        "graphAPIUrl": {
+          "value": "https://graph.microsoft.com/v1.0/me/",
+          "propertyDataType": "PropertyLongString"
+        },
+        "backgroundColor": {
+          "value": "lightblue",
+          "propertyDataType": "PropertyLongString"
+        }
+      },
+      {
+        "contentLink": {},
+        "name": "Events",
+        "language": {},
+        "existingLanguages": [
+          {
+            "link": null,
+            "displayName": "English",
+            "name": "en"
+          }
+        ],
+        "masterLanguage": {
+          "link": null,
+          "displayName": "English",
+          "name": "en"
+        },
+        "contentType": ["Block", "O365HiBlock"],
+        "parentLink": {
+          "id": 336,
+          "workId": 0,
+          "guidValue": "448b6fa1-eb23-4fe8-a707-670bf5204f85",
+          "providerName": null,
+          "url": null
+        },
+        "routeSegment": null,
+        "url": null,
+        "changed": "2019-09-24T15:12:15Z",
+        "created": "2019-09-24T15:12:15Z",
+        "startPublish": "2019-09-24T15:12:15Z",
+        "stopPublish": null,
+        "saved": "2019-09-25T09:48:27Z",
+        "status": "Published",
+        "category": {
+          "value": [],
+          "propertyDataType": "PropertyCategory"
+        },
+        "heading": {
+          "value": "",
+          "propertyDataType": "PropertyLongString"
+        },
+        "hiText": {
+          "value": "lalal",
+          "propertyDataType": "PropertyLongString"
+        },
+        "sectionTitle": {
+          "value": "",
+          "propertyDataType": "PropertyLongString"
+        },
+        "graphAPIUrl": {
+          "value": "https://graph.microsoft.com/v1.0/me/",
+          "propertyDataType": "PropertyLongString"
+        },
+        "backgroundColor": {
+          "value": "lightblue",
+          "propertyDataType": "PropertyLongString"
+        }
+      },
+      {
+        "contentLink": {},
+        "name": "Tasks",
+        "language": {},
+        "existingLanguages": [
+          {
+            "link": null,
+            "displayName": "English",
+            "name": "en"
+          }
+        ],
+        "masterLanguage": {
+          "link": null,
+          "displayName": "English",
+          "name": "en"
+        },
+        "contentType": ["Block", "O365HiBlock"],
+        "parentLink": {
+          "id": 336,
+          "workId": 0,
+          "guidValue": "448b6fa1-eb23-4fe8-a707-670bf5204f85",
+          "providerName": null,
+          "url": null
+        },
+        "routeSegment": null,
+        "url": null,
+        "changed": "2019-09-24T15:12:15Z",
+        "created": "2019-09-24T15:12:15Z",
+        "startPublish": "2019-09-24T15:12:15Z",
+        "stopPublish": null,
+        "saved": "2019-09-25T09:48:27Z",
+        "status": "Published",
+        "category": {
+          "value": [],
+          "propertyDataType": "PropertyCategory"
+        },
+        "heading": {
+          "value": "",
+          "propertyDataType": "PropertyLongString"
+        },
+        "hiText": {
+          "value": "lalal",
+          "propertyDataType": "PropertyLongString"
+        },
+        "sectionTitle": {
+          "value": "",
+          "propertyDataType": "PropertyLongString"
+        },
+        "graphAPIUrl": {
+          "value": "https://graph.microsoft.com/v1.0/me/",
+          "propertyDataType": "PropertyLongString"
+        },
+        "backgroundColor": {
+          "value": "lightblue",
+          "propertyDataType": "PropertyLongString"
+        }
+      },
+      {
+        "contentLink": {
+          "id": 356,
+          "workId": 0,
+          "guidValue": "fb18fd61-356d-417f-aacb-be7b1fdf60bd",
+          "providerName": null,
+          "url": null
+        },
+        "name": "Shared Files",
+        "language": {
+          "link": null,
+          "displayName": "English",
+          "name": "en"
+        },
+        "existingLanguages": [
+          {
+            "link": null,
+            "displayName": "English",
+            "name": "en"
+          }
+        ],
+        "masterLanguage": {
+          "link": null,
+          "displayName": "English",
+          "name": "en"
+        },
+        "contentType": ["Block", "O365SharedFilesBlock"],
+        "parentLink": {
+          "id": 336,
+          "workId": 0,
+          "guidValue": "448b6fa1-eb23-4fe8-a707-670bf5204f85",
+          "providerName": null,
+          "url": null
+        },
+        "routeSegment": null,
+        "url": null,
+        "changed": "2019-09-24T16:05:40Z",
+        "created": "2019-09-24T16:05:40Z",
+        "startPublish": "2019-09-24T16:05:40Z",
+        "stopPublish": null,
+        "saved": "2019-09-24T16:07:11Z",
+        "status": "Published",
+        "category": {
+          "value": [],
+          "propertyDataType": "PropertyCategory"
+        },
+        "heading": {
+          "value": "Shared Files",
+          "propertyDataType": "PropertyLongString"
+        },
+        "sectionTitle": {
+          "value": "",
+          "propertyDataType": "PropertyLongString"
+        },
+        "graphAPIUrl": {
+          "value": "",
+          "propertyDataType": "PropertyLongString"
+        },
+        "backgroundColor": {
+          "value": "lightgreen",
+          "propertyDataType": "PropertyLongString"
+        }
+      },
+      {
+        "contentLink": {
+          "id": 357,
+          "workId": 0,
+          "guidValue": "ced115ce-adfb-4504-98f8-eb3703bc97ad",
+          "providerName": null,
+          "url": null
+        },
+        "name": "Recent Files",
+        "language": {
+          "link": null,
+          "displayName": "English",
+          "name": "en"
+        },
+        "existingLanguages": [
+          {
+            "link": null,
+            "displayName": "English",
+            "name": "en"
+          }
+        ],
+        "masterLanguage": {
+          "link": null,
+          "displayName": "English",
+          "name": "en"
+        },
+        "contentType": ["Block", "O365RecentFilesBlock"],
+        "parentLink": {
+          "id": 336,
+          "workId": 0,
+          "guidValue": "448b6fa1-eb23-4fe8-a707-670bf5204f85",
+          "providerName": null,
+          "url": null
+        },
+        "routeSegment": null,
+        "url": null,
+        "changed": "2019-09-24T16:07:57Z",
+        "created": "2019-09-24T16:07:57Z",
+        "startPublish": "2019-09-24T16:07:57Z",
+        "stopPublish": null,
+        "saved": "2019-09-24T16:08:08Z",
+        "status": "Published",
+        "category": {
+          "value": [],
+          "propertyDataType": "PropertyCategory"
+        },
+        "heading": {
+          "value": "Recent Files",
+          "propertyDataType": "PropertyLongString"
+        },
+        "sectionTitle": {
+          "value": "",
+          "propertyDataType": "PropertyLongString"
+        },
+        "graphAPIUrl": {
+          "value": "",
+          "propertyDataType": "PropertyLongString"
+        },
+        "backgroundColor": {
+          "value": "lightpink",
+          "propertyDataType": "PropertyLongString"
+        }
+      },
+      {
+        "contentLink": {
+          "id": 358,
+          "workId": 0,
+          "guidValue": "acee0072-aa46-479d-bcc5-f33e6ba25774",
+          "providerName": null,
+          "url": null
+        },
+        "name": "Links",
+        "language": {
+          "link": null,
+          "displayName": "English",
+          "name": "en"
+        },
+        "existingLanguages": [
+          {
+            "link": null,
+            "displayName": "English",
+            "name": "en"
+          }
+        ],
+        "masterLanguage": {
+          "link": null,
+          "displayName": "English",
+          "name": "en"
+        },
+        "contentType": ["Block", "O365LinksBlock"],
+        "parentLink": {
+          "id": 336,
+          "workId": 0,
+          "guidValue": "448b6fa1-eb23-4fe8-a707-670bf5204f85",
+          "providerName": null,
+          "url": null
+        },
+        "routeSegment": null,
+        "url": null,
+        "changed": "2019-09-24T17:14:38Z",
+        "created": "2019-09-24T17:14:38Z",
+        "startPublish": "2019-09-24T17:14:38Z",
+        "stopPublish": null,
+        "saved": "2019-09-24T17:15:06Z",
+        "status": "Published",
+        "category": {
+          "value": [],
+          "propertyDataType": "PropertyCategory"
+        },
+        "heading": {
+          "value": "Links",
+          "propertyDataType": "PropertyLongString"
+        },
+        "sectionTitle": {
+          "value": "",
+          "propertyDataType": "PropertyLongString"
+        },
+        "graphAPIUrl": {
+          "value": "",
+          "propertyDataType": "PropertyLongString"
+        },
+        "backgroundColor": {
+          "value": "LightGoldenRodYellow ",
+          "propertyDataType": "PropertyLongString"
+        }
+      },
+      {
+        "contentLink": {
+          "id": 359,
+          "workId": 0,
+          "guidValue": "b458f30a-56db-463f-9b58-34e943e1159e",
+          "providerName": null,
+          "url": null
+        },
+        "name": "Apps",
+        "language": {
+          "link": null,
+          "displayName": "English",
+          "name": "en"
+        },
+        "existingLanguages": [
+          {
+            "link": null,
+            "displayName": "English",
+            "name": "en"
+          }
+        ],
+        "masterLanguage": {
+          "link": null,
+          "displayName": "English",
+          "name": "en"
+        },
+        "contentType": ["Block", "O365AppsBlock"],
+        "parentLink": {
+          "id": 336,
+          "workId": 0,
+          "guidValue": "448b6fa1-eb23-4fe8-a707-670bf5204f85",
+          "providerName": null,
+          "url": null
+        },
+        "routeSegment": null,
+        "url": null,
+        "changed": "2019-09-24T17:15:24Z",
+        "created": "2019-09-24T17:15:24Z",
+        "startPublish": "2019-09-24T17:15:24Z",
+        "stopPublish": null,
+        "saved": "2019-09-24T17:15:42Z",
+        "status": "Published",
+        "category": {
+          "value": [],
+          "propertyDataType": "PropertyCategory"
+        },
+        "heading": {
+          "value": "Apps",
+          "propertyDataType": "PropertyLongString"
+        },
+        "sectionTitle": {
+          "value": "",
+          "propertyDataType": "PropertyLongString"
+        },
+        "graphAPIUrl": {
+          "value": "",
+          "propertyDataType": "PropertyLongString"
+        },
+        "backgroundColor": {
+          "value": "Moccasin",
+          "propertyDataType": "PropertyLongString"
+        }
+      },
+      {
+        "contentLink": {
+          "id": 360,
+          "workId": 0,
+          "guidValue": "915dd23c-985d-4dc4-aea5-732dbf239147",
+          "providerName": null,
+          "url": null
+        },
+        "name": "Poster",
+        "language": {
+          "link": null,
+          "displayName": "English",
+          "name": "en"
+        },
+        "existingLanguages": [
+          {
+            "link": null,
+            "displayName": "English",
+            "name": "en"
+          }
+        ],
+        "masterLanguage": {
+          "link": null,
+          "displayName": "English",
+          "name": "en"
+        },
+        "contentType": ["Block", "O365PosterBlock"],
+        "parentLink": {
+          "id": 336,
+          "workId": 0,
+          "guidValue": "448b6fa1-eb23-4fe8-a707-670bf5204f85",
+          "providerName": null,
+          "url": null
+        },
+        "routeSegment": null,
+        "url": null,
+        "changed": "2019-09-24T17:16:08Z",
+        "created": "2019-09-24T17:16:08Z",
+        "startPublish": "2019-09-24T17:16:08Z",
+        "stopPublish": null,
+        "saved": "2019-09-24T17:16:43Z",
+        "status": "Published",
+        "category": {
+          "value": [],
+          "propertyDataType": "PropertyCategory"
+        },
+        "heading": {
+          "value": "Poster",
+          "propertyDataType": "PropertyLongString"
+        },
+        "sectionTitle": {
+          "value": "",
+          "propertyDataType": "PropertyLongString"
+        },
+        "graphAPIUrl": {
+          "value": "",
+          "propertyDataType": "PropertyLongString"
+        },
+        "backgroundColor": {
+          "value": "SeaShell",
+          "propertyDataType": "PropertyLongString"
+        }
+      },
+      {
+        "contentLink": {
+          "id": 361,
+          "workId": 0,
+          "guidValue": "f67c91ae-73fd-4068-a335-d922a891c9cd",
+          "providerName": null,
+          "url": null
+        },
+        "name": "Video",
+        "language": {
+          "link": null,
+          "displayName": "English",
+          "name": "en"
+        },
+        "existingLanguages": [
+          {
+            "link": null,
+            "displayName": "English",
+            "name": "en"
+          }
+        ],
+        "masterLanguage": {
+          "link": null,
+          "displayName": "English",
+          "name": "en"
+        },
+        "contentType": ["Block", "O365VideoBlock"],
+        "parentLink": {
+          "id": 336,
+          "workId": 0,
+          "guidValue": "448b6fa1-eb23-4fe8-a707-670bf5204f85",
+          "providerName": null,
+          "url": null
+        },
+        "routeSegment": null,
+        "url": null,
+        "changed": "2019-09-24T17:16:56Z",
+        "created": "2019-09-24T17:16:56Z",
+        "startPublish": "2019-09-24T17:16:56Z",
+        "stopPublish": null,
+        "saved": "2019-09-24T17:17:37Z",
+        "status": "Published",
+        "category": {
+          "value": [],
+          "propertyDataType": "PropertyCategory"
+        },
+        "heading": {
+          "value": "Video",
+          "propertyDataType": "PropertyLongString"
+        },
+        "sectionTitle": {
+          "value": "",
+          "propertyDataType": "PropertyLongString"
+        },
+        "graphAPIUrl": {
+          "value": "",
+          "propertyDataType": "PropertyLongString"
+        },
+        "backgroundColor": {
+          "value": "PapayaWhip",
+          "propertyDataType": "PropertyLongString"
+        }
+      },
+      {
+        "contentLink": {
+          "id": 362,
+          "workId": 0,
+          "guidValue": "d83170a3-74fc-4597-b8b9-0c9eda374cdb",
+          "providerName": null,
+          "url": null
+        },
+        "name": "Notes",
+        "language": {
+          "link": null,
+          "displayName": "English",
+          "name": "en"
+        },
+        "existingLanguages": [
+          {
+            "link": null,
+            "displayName": "English",
+            "name": "en"
+          }
+        ],
+        "masterLanguage": {
+          "link": null,
+          "displayName": "English",
+          "name": "en"
+        },
+        "contentType": ["Block", "O365NotesBlock"],
+        "parentLink": {
+          "id": 336,
+          "workId": 0,
+          "guidValue": "448b6fa1-eb23-4fe8-a707-670bf5204f85",
+          "providerName": null,
+          "url": null
+        },
+        "routeSegment": null,
+        "url": null,
+        "changed": "2019-09-24T17:17:57Z",
+        "created": "2019-09-24T17:17:57Z",
+        "startPublish": "2019-09-24T17:17:57Z",
+        "stopPublish": null,
+        "saved": "2019-09-24T17:18:13Z",
+        "status": "Published",
+        "category": {
+          "value": [],
+          "propertyDataType": "PropertyCategory"
+        },
+        "heading": {
+          "value": "Notes",
+          "propertyDataType": "PropertyLongString"
+        },
+        "sectionTitle": {
+          "value": "",
+          "propertyDataType": "PropertyLongString"
+        },
+        "graphAPIUrl": {
+          "value": "",
+          "propertyDataType": "PropertyLongString"
+        },
+        "backgroundColor": {
+          "value": "MintCream",
+          "propertyDataType": "PropertyLongString"
+        }
+      }
+    ],
+    "value": [],
+    "propertyDataType": "PropertyContentArea"
+  },
+  "disableIndexing": {
+    "value": null,
+    "propertyDataType": "PropertyBoolean"
+  },
+  "pageIsNavigationRoot": {
+    "value": null,
+    "propertyDataType": "PropertyBoolean"
+  }
+}

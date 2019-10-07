@@ -3,12 +3,12 @@ import React, { FunctionComponent, useState, useEffect } from 'react';
 
 import Styles from './AccountBlock.module.scss';
 
-import { IUser, getUserData } from 'common/api';
+import { IUser, getUserData, IContent } from 'common/api';
 
 import UserInformation from './components/UserInformation/UserInformation';
 import ContentPlaceholder from 'common/components/ContentPlaceholder';
 
-type AccountBlockProps = {};
+type AccountBlockProps = IContent;
 
 const AccountBlock: FunctionComponent<AccountBlockProps> = () => {
   const [loading, setLoading] = useState<boolean>(true);
