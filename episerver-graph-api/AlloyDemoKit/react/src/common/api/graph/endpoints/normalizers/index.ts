@@ -1,5 +1,7 @@
 import dayjs from 'dayjs';
-import { DateTimeTimeZone } from '@microsoft/microsoft-graph-types';
+import { DateTimeTimeZone, PlannerTask } from '@microsoft/microsoft-graph-types';
+
+import { endsWith } from 'common/utils';
 import {
   IUserResponse,
   IUser,
@@ -16,6 +18,16 @@ import {
   IOnenoteNote,
   IOnenoteSectionsResponse,
 } from '../types';
+
+const getImageType = (name: string): DocumentType => {
+  if (endsWith(name, DocumentType.Excel)) {
+    return DocumentType.Excel;
+  }
+  if (endsWith(name, DocumentType.PowerPoint)) {
+    return DocumentType.PowerPoint;
+  }
+  return DocumentType.Word;
+};
 
 const getNonNullableValue = <T>(value: T, defaultValue: NonNullable<T>): NonNullable<T> => {
   if (!!value) {
@@ -63,7 +75,7 @@ export const normalizeUserTasks = ({ value }: ITasksResponse): ITask[] => {
     id: getNonNullableValue(v.id, i.toString()),
     title: getNonNullableValue(v.title, ''),
     dueToDate: formatDate(getNonNullableValue(v.dueDateTime, ''), 'dddd, MMMM DD, YYYYY'),
-    isCompleted: false,
+    isCompleted: !!v.completedDateTime,
   }));
 };
 
@@ -71,7 +83,7 @@ export const normalizeUserSharedFiles = ({ value }: ISharedFilesResponse): IShar
   return value.slice(0, 3).map((v, i) => ({
     id: getNonNullableValue(v.id, i.toString()),
     name: getNonNullableValue(v.name, ''),
-    type: DocumentType.Excel,
+    type: getImageType(getNonNullableValue(v.name, '')),
     webUrl: getNonNullableValue(v.webUrl, ''),
     sharedBy: v.createdBy ? getNonNullableValue(v.createdBy.user && v.createdBy.user.displayName, '') : '',
   }));
@@ -81,7 +93,7 @@ export const normalizeUserRecentOpenedFiles = ({ value }: IRecentFilesResponse):
   return value.slice(0, 3).map((v, i) => ({
     id: getNonNullableValue(v.id, i.toString()),
     name: getNonNullableValue(v.name, ''),
-    type: DocumentType.Excel,
+    type: getImageType(getNonNullableValue(v.name, '')),
     webUrl: getNonNullableValue(v.webUrl, ''),
     updatedBy: v.lastModifiedBy
       ? getNonNullableValue(v.lastModifiedBy.user && v.lastModifiedBy.user.displayName, '')
@@ -108,4 +120,13 @@ export const normalizeOnenoteSections = ({ value }: IOnenoteSectionsResponse): I
 
 export const normalizeOnenoteNotes = ([pages, sections]: [IOnenoteNote[], IOnenoteNote[]]): IOnenoteNote[] => {
   return [...pages, ...sections];
+};
+
+export const normalizeCompletedTask = (task: PlannerTask): ITask => {
+  return {
+    id: getNonNullableValue(task.id, ''),
+    title: getNonNullableValue(task.title, ''),
+    dueToDate: formatDate(getNonNullableValue(task.dueDateTime, ''), 'dddd, MMMM DD, YYYYY'),
+    isCompleted: !!task.completedDateTime,
+  };
 };

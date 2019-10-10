@@ -100,7 +100,7 @@ export const getMockedRecentlyOpenedFiles = (): IRecentFile[] => {
   return [
     {
       id: '1',
-      name: 'WHO_Offer.doc',
+      name: 'WHO_Offer.docx',
       type: DocumentType.Word,
       webUrl: 'https://onet.pl',
       updatedBy: 'Kamelia Niemczyk',
@@ -116,7 +116,7 @@ export const getMockedRecentlyOpenedFiles = (): IRecentFile[] => {
     },
     {
       id: '3',
-      name: 'Estimation_WHO.exe',
+      name: 'Estimation_WHO.xlsx',
       type: DocumentType.Excel,
       webUrl: 'https://onet.pl',
       updatedBy: 'Magdalena Ruta',

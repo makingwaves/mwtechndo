@@ -41,7 +41,7 @@ export interface ISharedFilesResponse {
 export enum DocumentType {
   PowerPoint = 'pptx',
   Excel = 'xlsx',
-  Word = 'doc',
+  Word = 'docx',
 }
 
 export interface ISharedFile {

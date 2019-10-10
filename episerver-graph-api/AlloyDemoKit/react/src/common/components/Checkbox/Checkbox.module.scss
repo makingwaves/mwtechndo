@@ -12,11 +12,14 @@
     height: 8px;
     display: block;
     border-radius: 50%;
-    background: $third-grey;
+    background: $base-green;
     transform: scale(0);
     transition: all 0.2s ease-in;
   }
-  &.checked:after {
-    transform: scale(1);
+  &.checked {
+    border-color: $base-green;
+    &:after {
+      transform: scale(1);
+    }
   }
 }

@@ -1,3 +1,5 @@
+import { PlannerTask } from '@microsoft/microsoft-graph-types';
+
 import { api } from '../api';
 import { isDebug } from 'common/utils';
 
@@ -10,6 +12,7 @@ import {
   normalizeOnenotePages,
   normalizeOnenoteSections,
   normalizeOnenoteNotes,
+  normalizeCompletedTask,
 } from './normalizers';
 import {
   IUserResponse,
@@ -90,4 +93,10 @@ export const getOnenoteSections = (): Promise<IOnenoteNote[]> => {
 
 export const getOnenoteNotes = (): Promise<IOnenoteNote[]> => {
   return Promise.all([getOnenotePages(), getOnenoteSections()]).then(normalizeOnenoteNotes);
+};
+
+export const completeTask = (id: string): Promise<ITask> => {
+  return api
+    .patch<ITask, PlannerTask>(`/v1.0/planner/tasks/${id}`, { percentComplete: 100 })
+    .then(normalizeCompletedTask);
 };
