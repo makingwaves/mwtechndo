@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://localhost/EpiServer.AlloyDemo.GraphAPI/react/build",
+  "_homepage": "http://localhost/EpiServer.AlloyDemo.GraphAPI/react/build",
   "dependencies": {
     "@microlink/react": "^4.2.2",
     "axios": "^0.19.0",
