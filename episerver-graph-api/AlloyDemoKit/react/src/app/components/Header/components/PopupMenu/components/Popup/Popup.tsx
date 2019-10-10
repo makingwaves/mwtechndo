@@ -17,7 +17,7 @@ const Popup: FunctionComponent<PopupProps> = ({ isVisible }) => {
       <ul className={'list p-reset m-reset tr'}>
         <li className={'p-sm'}>
           <Button onClick={logout}>
-            <Fragment>Logout</Fragment>
+            <Fragment>Log out</Fragment>
           </Button>
         </li>
       </ul>

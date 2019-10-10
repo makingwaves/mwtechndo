@@ -11,7 +11,7 @@ type RecentlyAppProps = IRecentlyApps;
 
 const RecentlyApp: FunctionComponent<RecentlyAppProps> = ({ logoUrl, appUrl, displayName }) => {
   return (
-    <div className={classNames(Styles.container, 'mb-md pb-mini')}>
+    <div className={classNames(Styles.container, 'mb-sm pb-mini')}>
       <a href={appUrl} className={'inline-flex items-center no-underline'}>
         <LazyImage source={logoUrl} alt={displayName} containerClass={classNames(Styles.image, 'mr-sm')} />
         <h3 className={classNames(Styles.linkName, 'fw4 m-reset')}>{displayName}</h3>

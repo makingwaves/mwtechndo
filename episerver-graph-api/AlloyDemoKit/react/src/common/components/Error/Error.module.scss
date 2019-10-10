@@ -1,0 +1,12 @@
+@import '~common/styles/settings/index.scss';
+
+.container {
+  top: auto;
+  height: auto;
+  background-color: $base-red;
+}
+
+.message {
+  color: $primary-red;
+  font-size: 14px;
+}
