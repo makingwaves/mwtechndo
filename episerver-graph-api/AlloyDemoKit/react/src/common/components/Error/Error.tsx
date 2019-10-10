@@ -9,20 +9,19 @@ type ErrorProps = {
 };
 
 const Error: FunctionComponent<ErrorProps> = ({ msg, onMessageClear }) => {
-  let timeoutFn: ReturnType<typeof setTimeout>;
-
   useEffect(() => {
+    console.log('dupa');
     if (!!msg) {
-      timeoutFn = setTimeout(() => {
+      const timeoutFn = setTimeout(() => {
         onMessageClear();
       }, 3000);
+      return (): void => {
+        if (timeoutFn) {
+          clearTimeout(timeoutFn);
+        }
+      };
     }
-    return (): void => {
-      if (timeoutFn) {
-        clearTimeout(timeoutFn);
-      }
-    };
-  }, [msg]);
+  }, [msg, onMessageClear]);
 
   return (
     <div className={classNames(Styles.container, 'aspect-ratio--object pvt-md pht-sm')}>
