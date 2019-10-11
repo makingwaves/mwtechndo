@@ -7,3 +7,19 @@
     margin: -10px;
   }
 }
+
+.imageContainer {
+  width: 250px;
+  height: 250px;
+  background-image: url('https://moviesroom.pl/images/0.Aj.MR/Ola/fotki/Klaun_Pennywise_To_2017.jpg');
+  background-size: 100% 100%;
+  background-color: #f3d661;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  clip-path: url(#svgLogoBuble);
+  z-index: -1;
+  @media (min-width: $laptops) {
+    width: 400px;
+    height: 400px;
+  }
+}

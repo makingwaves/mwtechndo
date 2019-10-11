@@ -20,7 +20,7 @@ const Footer: FunctionComponent<FooterProps> = () => {
     const brand = getBrand();
     const socials = getSocials();
     setSocials(socials);
-    setBrand(brand);
+    setBrand(brand); 
   }, []);
 
   return (

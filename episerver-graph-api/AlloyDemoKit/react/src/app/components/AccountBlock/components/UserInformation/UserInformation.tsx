@@ -23,7 +23,7 @@ const mobilePhoneSvg = (
 
 const UserInformation: FunctionComponent<UserInformationProps> = ({ givenName, mail, mobilePhone }) => {
   return (
-    <section className={Styles.container}>
+    <section>
       <h2 className={classNames(Styles.userInfo, 'm-reset')}>Hi {givenName}!</h2>
       <p className={classNames(Styles.info, 'mb-reset')}>Let's get things done!</p>
       <div className={'flex items-center flex-wrap mvt-md'}>
