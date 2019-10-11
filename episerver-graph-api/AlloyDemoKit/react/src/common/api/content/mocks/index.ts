@@ -17,7 +17,8 @@ export const getMockedHeaderData = (): IHeaderData => {
   return {
     logoUrl: 'http://www.kariera.wse.krakow.pl/jsjobsdata/data/employer/comp_672/logo/MW_logo_symbol_black.png',
     userFullName: 'Krzysztof Nofz',
-    userPhotoUrl: 'https://moviesroom.pl/images/0.Aj.MR/Ola/fotki/Klaun_Pennywise_To_2017.jpg',
+    userPhotoUrl:
+      'https://scontent-frx5-1.xx.fbcdn.net/v/t1.0-9/50869005_2009689985767139_7266709714187059200_n.jpg?_nc_cat=110&_nc_oc=AQkfLRg0cyUwhw5vjMF1a4SKqNuTLpCmdo6BgxGpnuZUozyqaprAgGqwkFnqamYoltQ&_nc_ht=scontent-frx5-1.xx&oh=2002e1d250bb221a2a2ccfb6d0011828&oe=5E1EC94A',
   };
 };
 
